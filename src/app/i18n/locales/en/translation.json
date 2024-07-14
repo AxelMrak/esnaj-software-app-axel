@@ -12,5 +12,13 @@
 		"projects": "Projects",
 		"services": "Services",
 		"contact": "Contact us"
+	},
+	"home": {
+		"wordsHero": [
+			"Quality",
+			"Passion",
+			"Efficiency",
+			"Speed"
+		]
 	}
 }

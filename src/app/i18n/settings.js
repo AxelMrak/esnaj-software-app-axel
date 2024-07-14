@@ -12,5 +12,6 @@ export function getOptions (lng = fallbackLng, ns = defaultNS) {
     fallbackNS: defaultNS,
     defaultNS,
     ns,
+    returnObjects: true,
   }
 }

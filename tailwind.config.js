@@ -15,17 +15,17 @@ module.exports = {
 			colors: {
 				'gray-dark': '#1E1E1E',
 				'gray-light': '#5B5B5B',
-				'accent': '#F23005',
+				accent: '#F23005',
 			},
-      fontFamily: {
-        'clash-grotesk': ['Clash Grotesk', 'sans-serif'],
-      },
-      fontWeight: {
-        'extralight': 200,
-        'light': 300,
-        'regular': 400,
-        'medium': 500,
-      }
+			fontFamily: {
+				'clash-grotesk': ['Clash Grotesk', 'sans-serif'],
+			},
+			fontWeight: {
+				extralight: 200,
+				light: 300,
+				regular: 400,
+				medium: 500,
+			},
 		},
 	},
 	plugins: [],

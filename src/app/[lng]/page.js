@@ -14,7 +14,7 @@ export default async function Page({ params: { lng } }) {
 	const { t } = await useTranslation(lng);
 
 	return <main>
-		<HeroHome />
+		<HeroHome lng={lng} />
 		<Companies />
 	</main>;
 }

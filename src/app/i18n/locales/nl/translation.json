@@ -12,5 +12,13 @@
         "projects": "Projecten",
         "services": "Diensten",
         "contact": "Contact ons"
+    },
+    "home": {
+        "wordsHero": [
+            "Kwaliteit",
+            "Passie",
+            "Efficiëntie",
+            "Snelheid"
+        ]
     }
 }

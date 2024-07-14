@@ -19,6 +19,9 @@
 			"Passion",
 			"Efficiency",
 			"Speed"
-		]
+		],
+		"hero": {
+			"description": "Esnaj Software is your trusted web development partner in Delft. We specialize in creating cutting-edge websites and applications that drive business success."
+		}
 	}
 }

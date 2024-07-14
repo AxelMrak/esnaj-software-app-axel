@@ -1,24 +1,22 @@
 {
-    "h1": "Een eenvoudig voorbeeld",
-    "languageSwitcher": {
-        "options": {
-            "en": "Engels",
-            "nl": "Nederlands"
-        }
-    },
-    "routes": {
-        "home": "Home",
-        "about": "Over ons",
-        "projects": "Projecten",
-        "services": "Diensten",
-        "contact": "Contact ons"
-    },
-    "home": {
-        "wordsHero": [
-            "Kwaliteit",
-            "Passie",
-            "Efficiëntie",
-            "Snelheid"
-        ]
-    }
+	"h1": "Een eenvoudig voorbeeld",
+	"languageSwitcher": {
+		"options": {
+			"en": "Engels",
+			"nl": "Nederlands"
+		}
+	},
+	"routes": {
+		"home": "Home",
+		"about": "Over ons",
+		"projects": "Projecten",
+		"services": "Diensten",
+		"contact": "Contact ons"
+	},
+	"home": {
+		"wordsHero": ["Kwaliteit", "Passie", "Efficiëntie", "Snelheid"],
+		"hero": {
+			"description": "Esnaj Software is uw vertrouwde partner voor webontwikkeling in Delft. Wij zijn gespecialiseerd in het creëren van geavanceerde websites en applicaties die zakelijk succes stimuleren."
+		}
+	}
 }

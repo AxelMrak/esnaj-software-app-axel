@@ -5,36 +5,37 @@ import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
 function HeroHome({ lng }) {
-	const { t } = useTranslation(lng);
-	const [wordsForHero, setWordsForHero] = useState(heroWords);
-	const [currentWordIndex, setCurrentWordIndex] = useState(0);
-	const [isFading, setIsFading] = useState(false);
+	 const { t } = useTranslation(lng);
+	// const [wordsForHero, setWordsForHero] = useState(heroWords);
+	// const [currentWordIndex, setCurrentWordIndex] = useState(0);
+	// const [isFading, setIsFading] = useState(false);
 
-	useEffect(() => {
-		const interval = setInterval(() => {
-			setIsFading(true);
-			setTimeout(() => {
-				setCurrentWordIndex((prevIndex) => (prevIndex + 1) % heroWords.length);
-				setIsFading(false);
-			}, 1000);
-		}, 3000);
+	// useEffect(() => {
+	// 	const interval = setInterval(() => {
+	// 		setIsFading(true);
+	// 		setTimeout(() => {
+	// 			setCurrentWordIndex((prevIndex) => (prevIndex + 1) % heroWords.length);
+	// 			setIsFading(false);
+	// 		}, 1000);
+	// 	}, 3000);
 
-		return () => clearInterval(interval);
-	}, [heroWords]);
-
+	// 	return () => clearInterval(interval);
+	// }, [heroWords]);
+	// isFading ? 'opacity-0 word-fade-out' : 'opacity-100 word-fade-in'
 	return (
 		<section className="w-full h-[90vh] flex flex-row items-center justify-between">
 			<article className="w-1/2 font-light h-full flex flex-col items-start justify-center gap-6 pl-20">
 				<span
-					className={`block transition-opacity duration-500 transform text-9xl font-light relative overflow-hidden ${
-						isFading ? 'opacity-0 word-fade-out' : 'opacity-100 word-fade-in'
-					}`}
+					className={`block transition-opacity duration-500 transform text-9xl font-light relative overflow-hidden 
+					`}
 				>
-					{wordsForHero[currentWordIndex]}
+					Esnaj Software
 				</span>
-				<hr className="w-10/12  h-[3px] bg-accent" />
+				<hr className="w-10/12 h-[3px] bg-accent" />
 				<div className="flex flex-col gap-4">
-					<p className="text-5xl text-gray-dark font-extralight">Delft</p>
+					<p className="w-10/12 text-xl text-gray-dark font-light">
+						{t('home.hero.description')}
+					</p>
 				</div>
 			</article>
 			<article

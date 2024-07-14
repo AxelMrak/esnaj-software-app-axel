@@ -40,3 +40,5 @@ export const partnersLogos = [
 		alt: 'Vopak',
 	},
 ];
+
+export const heroWords = ['Esnaj', 'Software'];

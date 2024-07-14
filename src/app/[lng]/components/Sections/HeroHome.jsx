@@ -1,11 +1,12 @@
 'use client';
 import { useTranslation } from '@/app/i18n/client';
+import { heroWords } from '@/utils/constants';
 import Image from 'next/image';
 import React, { useEffect, useState } from 'react';
 
 function HeroHome({ lng }) {
 	const { t } = useTranslation(lng);
-	const [wordsForHero, setWordsForHero] = useState(t('home.wordsHero'));
+	const [wordsForHero, setWordsForHero] = useState(heroWords);
 	const [currentWordIndex, setCurrentWordIndex] = useState(0);
 	const [isFading, setIsFading] = useState(false);
 
@@ -13,23 +14,13 @@ function HeroHome({ lng }) {
 		const interval = setInterval(() => {
 			setIsFading(true);
 			setTimeout(() => {
-				setCurrentWordIndex(
-					(prevIndex) => (prevIndex + 1) % wordsForHero.length
-				);
+				setCurrentWordIndex((prevIndex) => (prevIndex + 1) % heroWords.length);
 				setIsFading(false);
 			}, 1000);
 		}, 3000);
 
 		return () => clearInterval(interval);
-	}, [wordsForHero]);
-
-	useEffect(() => {
-		if (t) {
-			setWordsForHero(t('home.wordsHero'));
-		} else {
-			setWordsForHero(['Esnaj', 'Software', 'Development']);
-		}
-	}, [lng, t]);
+	}, [heroWords]);
 
 	return (
 		<section className="w-full h-[90vh] flex flex-row items-center justify-between">
@@ -41,19 +32,14 @@ function HeroHome({ lng }) {
 				>
 					{wordsForHero[currentWordIndex]}
 				</span>
+				<hr className="w-10/12  h-[3px] bg-accent" />
 				<div className="flex flex-col gap-4">
-					<hr className="w-full h-[3px] bg-accent" />
-					<p className="text-7xl text-gray-dark font-extralight">
-						Esnaj Software
-					</p>
+					<p className="text-5xl text-gray-dark font-extralight">Delft</p>
 				</div>
 			</article>
 			<article
-				className="w-1/2 h-full flex items-center justify-center  bg-fixed bg-right  bg-no-repeat bg-cover grayscale"
-				style={{
-					backgroundImage: 'url(/images/delft-image.webp)',
-
-				}}
+				className="w-3/4 h-full bg-left bg-contain bg-no-repeat"
+				style={{ backgroundImage: 'url(/images/hero-image.webp)' }}
 			/>
 		</section>
 	);

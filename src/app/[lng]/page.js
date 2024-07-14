@@ -5,11 +5,6 @@ import LanguageSwitcher from './components/globals/LanguageSwitcher';
 import HeroHome from './components/Sections/HeroHome';
 import Companies from './components/Sections/Companies';
 
-export async function generateMetadata({ params: { lng } }) {
-	const { t } = await useTranslation(lng);
-	return { title: t('h1') };
-}
-
 export default async function Page({ params: { lng } }) {
 	const { t } = await useTranslation(lng);
 

@@ -17,15 +17,15 @@ export async function generateStaticParams() {
 }
 
 // TODO: FIX METADATA
-export async function generateMetadata({ params: { lng } }) {
-	if (languages.indexOf(lng) < 0) lng = fallbackLng;
-	const { t } = await useTranslation(lng);
-	return {
-		title: t('title'),
-		content:
-			'A playground to explore new Next.js 13/14 app directory features such as nested layouts, instant loading states, streaming, and component level data fetching.',
-	};
-}
+// export async function generateMetadata({ params: { lng } }) {
+// 	if (languages.indexOf(lng) < 0) lng = fallbackLng;
+// 	const { t } = await useTranslation(lng);
+// 	return {
+// 		title: t('title'),
+// 		content:
+// 			'A playground to explore new Next.js 13/14 app directory features such as nested layouts, instant loading states, streaming, and component level data fetching.',
+// 	};
+// }
 
 export default function RootLayout({ children, params: { lng } }) {
 	return (

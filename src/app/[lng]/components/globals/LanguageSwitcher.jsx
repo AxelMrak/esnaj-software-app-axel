@@ -12,7 +12,6 @@ const flags = {
 };
 
 export const LanguageSwitcher = ({ lng }) => {
-
 	const [isOpen, setIsOpen] = useState(false);
 	const { t } = useTranslation(lng);
 
@@ -24,7 +23,7 @@ export const LanguageSwitcher = ({ lng }) => {
 		<div className="fixed bottom-4 right-4 w-max h-max flex flex-col gap-2">
 			<button
 				onClick={toggleDropdown}
-				className="flex items-center gap-2 p-2 bg-white border border-gray-300 rounded-lg shadow-sm"
+				className="flex items-center gap-2 p-2 bg-white border border-gray-300 rounded-sm shadow-sm"
 			>
 				{React.cloneElement(flags[lng], {
 					className: 'w-6 h-6',
@@ -36,16 +35,17 @@ export const LanguageSwitcher = ({ lng }) => {
 					isOpen
 						? 'max-h-max opacity-100 shadow-sm'
 						: 'opacity-0 text-transparent h-0'
-				} transition-all duration-300 ease-in-out overflow-hidden flex items-center gap-2 p-2 bg-white border border-gray-300 rounded-lg`}
+				} transition-all duration-300 ease-in-out overflow-hidden flex items-center gap-2 p-2 bg-white border border-gray-300 rounded-sm`}
 			>
 				{languages &&
 					isOpen &&
 					languages?.length &&
-						languages.filter((lang) => lang !== lng)
+					languages
+						.filter((lang) => lang !== lng)
 						.map((lang) => (
 							<Link
 								key={lang}
-								className="flex items-center gap-2 hover:text-blue-500"
+								className="flex items-center gap-2 hover:text-accent"
 								href={`/${lang}`}
 								onClick={() => setIsOpen(false)}
 							>

@@ -6,7 +6,7 @@ import Link from 'next/link';
 function Nav({ lng }) {
 
 	return (
-		<nav className="flex flex-row items-center gap-4">
+		<nav className="flex flex-row items-center gap-4 font-[300] text-2xl">
 			{routes.slice(0, routes.length - 1).map((route, index) => (
 				<NavItem key={index} label={route.name} href={route.link} lng={lng} />
 			))}

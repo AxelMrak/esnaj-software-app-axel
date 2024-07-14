@@ -33,9 +33,9 @@ function HeroHome({ lng }) {
 				</span>
 				<hr className="w-10/12 h-[3px] bg-accent" />
 				<div className="flex flex-col gap-4">
-					<p className="w-10/12 text-xl text-gray-dark font-light">
+					<h1 className="w-10/12 text-xl text-gray-dark font-light">
 						{t('home.hero.description')}
-					</p>
+					</h1>
 				</div>
 			</article>
 			<article

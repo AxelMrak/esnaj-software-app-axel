@@ -11,8 +11,8 @@ function Companies() {
 	const { isMobile, isTablet, isDesktop } = useBreakpoints();
 
 	const getSlidesPerView = () => {
-		if (isMobile) return 3;
-		if (isTablet) return 5;
+		if (isMobile) return 2;
+		if (isTablet) return 4;
 		if (isDesktop) return 6;
 		return 6;
 	};

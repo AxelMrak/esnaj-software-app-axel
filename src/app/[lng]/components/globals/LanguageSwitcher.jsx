@@ -20,7 +20,7 @@ export const LanguageSwitcher = ({ lng }) => {
 	};
 
 	return (
-		<div className="fixed bottom-4 right-4 w-max h-max flex flex-col gap-2">
+		<div className="fixed bottom-4 right-4 w-max h-max flex flex-col gap-2 z-50">
 			<button
 				onClick={toggleDropdown}
 				className="flex items-center gap-2 p-2 bg-white border border-gray-300 rounded-sm shadow-sm"

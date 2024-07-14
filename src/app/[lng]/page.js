@@ -8,7 +8,7 @@ import Companies from './components/Sections/Companies';
 export default async function Page({ params: { lng } }) {
 	const { t } = await useTranslation(lng);
 
-	return <main>
+	return <main className='w-full flex flex-col grap-6'>
 		<HeroHome lng={lng} />
 		<Companies />
 	</main>;

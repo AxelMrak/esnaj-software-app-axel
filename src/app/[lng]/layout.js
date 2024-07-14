@@ -6,6 +6,8 @@ import { languages, fallbackLng } from '../i18n/settings';
 import { useTranslation } from '../i18n';
 import { LanguageSwitcher } from './components/globals/LanguageSwitcher';
 import Header from './components/globals/Header';
+import { BreakpointsProvider } from '@/context/BreakpointsContext';
+import { Suspense } from 'react';
 
 const ClashGrotesk = localFont({
 	src: '../../fonts/ClashGrotesk-Variable.woff2',
@@ -32,9 +34,13 @@ export default function RootLayout({ children, params: { lng } }) {
 		<html lang={lng} dir={dir(lng)} className={ClashGrotesk.className}>
 			<head />
 			<body>
-				<Header lng={lng} />
-				{children}				
-				<LanguageSwitcher lng={lng} />
+				<Suspense fallback="Loading...">
+				<BreakpointsProvider>
+					<Header lng={lng} />
+					{children}
+					<LanguageSwitcher lng={lng} />
+				</BreakpointsProvider>
+				</Suspense>
 			</body>
 		</html>
 	);

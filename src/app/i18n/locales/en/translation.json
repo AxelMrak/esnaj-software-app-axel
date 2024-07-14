@@ -1,0 +1,9 @@
+{
+  "h1": "A simple example",
+  "languageSwitcher": {
+    "options": {
+      "en": "English",
+      "nl": "Dutch"
+    }
+  }
+}

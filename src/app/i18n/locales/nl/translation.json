@@ -5,5 +5,12 @@
             "en": "Engels",
             "nl": "Nederlands"
         }
+    },
+    "routes": {
+        "home": "Home",
+        "about": "Over ons",
+        "projects": "Projecten",
+        "services": "Diensten",
+        "contact": "Contact ons"
     }
 }

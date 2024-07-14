@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { languages } from '../../../i18n/settings';
 import { useTranslation } from '../../../i18n/client';
 import { NetherlandsFlag, UKFlag } from './Icons/Flags';
-import React from 'react';
+import React, { useState } from 'react';
 
 const flags = {
 	en: <UKFlag />,
@@ -12,11 +12,12 @@ const flags = {
 };
 
 export const LanguageSwitcher = ({ lng }) => {
-	const [isOpen, setIsOpen] = React.useState(false);
+
+	const [isOpen, setIsOpen] = useState(false);
 	const { t } = useTranslation(lng);
 
 	const toggleDropdown = () => {
-		setIsOpen(!isOpen);
+		setIsOpen((prev) => !prev);
 	};
 
 	return (
@@ -39,8 +40,8 @@ export const LanguageSwitcher = ({ lng }) => {
 			>
 				{languages &&
 					isOpen &&
-					languages
-						.filter((lang) => lang !== lng)
+					languages?.length &&
+						languages.filter((lang) => lang !== lng)
 						.map((lang) => (
 							<Link
 								key={lang}

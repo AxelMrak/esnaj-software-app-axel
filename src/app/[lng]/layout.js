@@ -4,6 +4,7 @@ import { dir } from 'i18next';
 import { languages, fallbackLng } from '../i18n/settings';
 import { useTranslation } from '../i18n';
 import { LanguageSwitcher } from './components/globals/LanguageSwitcher';
+import Header from './components/globals/Header';
 
 export async function generateStaticParams() {
 	return languages.map((lng) => ({ lng }));
@@ -25,8 +26,9 @@ export default function RootLayout({ children, params: { lng } }) {
 		<html lang={lng} dir={dir(lng)}>
 			<head />
 			<body>
+				<Header lng={lng} />
+				{children}				
 				<LanguageSwitcher lng={lng} />
-				{children}
 			</body>
 		</html>
 	);

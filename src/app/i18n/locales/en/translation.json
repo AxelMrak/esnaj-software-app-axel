@@ -1,9 +1,16 @@
 {
-  "h1": "A simple example",
-  "languageSwitcher": {
-    "options": {
-      "en": "English",
-      "nl": "Dutch"
-    }
-  }
+	"h1": "A simple example",
+	"languageSwitcher": {
+		"options": {
+			"en": "English",
+			"nl": "Dutch"
+		}
+	},
+	"routes": {
+		"home": "Home",
+		"about": "About",
+		"projects": "Projects",
+		"services": "Services",
+		"contact": "Contact us"
+	}
 }

@@ -15,9 +15,6 @@ export default async function Page({ params: { lng } }) {
 	return (
 		<>
 			<main>
-				<h1>
-					{t('h1')}
-				</h1>
 			</main>
 		</>
 	);

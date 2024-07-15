@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import Link from 'next/link';
 
@@ -11,7 +12,7 @@ function MobileNav({ isOpen, routes, lng, t }) {
 			{routes.slice(0, routes.length - 1).map((route, index) => (
 				<Link
 					key={index}
-					href={route.link}
+					href={`/${lng}/${route.link}`}
 					className="hover:text-accent transition-opacity duration-300 ease-in-out"
 				>
 					{t(`routes.${route.name}`)}

@@ -11,7 +11,7 @@ const flags = {
 	nl: <NetherlandsFlag />,
 };
 
-export const LanguageSwitcher = ({ lng }) => {
+export const LanguageSwitcher = ({ lng = 'en' }) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const { t } = useTranslation(lng);
 

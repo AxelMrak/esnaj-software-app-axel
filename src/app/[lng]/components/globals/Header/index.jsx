@@ -20,7 +20,7 @@ function Header({ lng }) {
 			<MobileNav isOpen={isMenuOpen} routes={routes} lng={lng} t={t} />
 			<div className="flex flex-row items-center gap-4">
 				<Link
-					href={routes[routes.length - 1].link}
+					href={`/${lng}/${routes[routes.length - 1].name}`}
 					className="border border-gray-300 bg-white shadow-sm rounded-sm p-2 text-2xl font-[300] transition-all hover:bg-gray-dark hover:text-white hover:border-transparent"
 				>
 					{t(`routes.${routes[routes.length - 1].name}`)}

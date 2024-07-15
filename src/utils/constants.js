@@ -9,6 +9,22 @@ import {
 	IntegrationIcon,
 	MobileIcon,
 } from '@/app/[lng]/components/globals/Icons/Services';
+import i18next from 'i18next';
+
+const getTranslation = (key) => {
+	return i18next.t(key);
+};
+
+i18next.on('languageChanged', () => {
+	mainServices.forEach((service) => {
+		service.name = getTranslation(service.translationKeys.name);
+		service.description = getTranslation(service.translationKeys.description);
+	});
+	otherServices.forEach((service) => {
+		service.name = getTranslation(service.translationKeys.name);
+		service.description = getTranslation(service.translationKeys.description);
+	});
+});
 
 export const partnersLogos = [
 	{
@@ -58,25 +74,43 @@ export const heroWords = ['Esnaj', 'Software'];
 export const mainServices = [
 	{
 		id: 1,
-		name: 'Full Stack Development',
-		description:
-			'Get your business idea to life from start to finish using the latest technologies.',
+		translationKeys: {
+			name: 'home.services.main-services.full-stack-development.name',
+			description:
+				'home.services.main-services.full-stack-development.description',
+		},
+		name: getTranslation(
+			'home.services.main-services.full-stack-development.name'
+		),
+		description: getTranslation(
+			'home.services.main-services.full-stack-development.description'
+		),
 		link: 'full-stack-development',
 		icon: <DevelopmentIcon />,
 	},
 	{
 		id: 2,
-		name: 'Consulting',
-		description:
-			'We will aid you in the process of tackling the hardest software problems you can face.',
+		translationKeys: {
+			name: 'home.services.main-services.consulting.name',
+			description: 'home.services.main-services.consulting.description',
+		},
+		name: getTranslation('home.services.main-services.consulting.name'),
+		description: getTranslation(
+			'home.services.main-services.consulting.description'
+		),
 		link: 'consulting',
 		icon: <ConsultingIcon />,
 	},
 	{
 		id: 3,
-		name: 'API Integration',
-		description:
-			'We help make your software solutions communicate and integrate in the most efficient way possible.',
+		translationKeys: {
+			name: 'home.services.main-services.api-integration.name',
+			description: 'home.services.main-services.api-integration.description',
+		},
+		name: getTranslation('home.services.main-services.api-integration.name'),
+		description: getTranslation(
+			'home.services.main-services.api-integration.description'
+		),
 		link: 'api-integration',
 		icon: <IntegrationIcon />,
 	},
@@ -85,44 +119,74 @@ export const mainServices = [
 export const otherServices = [
 	{
 		id: 1,
-		name: 'Backend App Development',
-		description:
-			'We code an integratable, extendable and modular back end that will fluently integrate with your app.',
+		translationKeys: {
+			name: 'home.services.other-services.backend.name',
+			description: 'home.services.other-services.backend.description',
+		},
+		name: getTranslation('home.services.other-services.backend.name'),
+		description: getTranslation(
+			'home.services.other-services.backend.description'
+		),
 		icon: <BackendIcon />,
 	},
 	{
 		id: 2,
-		name: 'Hosting',
-		description:
-			'We help manage all the hassles that comes with putting your website on the web.',
+		translationKeys: {
+			name: 'home.services.other-services.hosting.name',
+			description: 'home.services.other-services.hosting.description',
+		},
+		name: getTranslation('home.services.other-services.hosting.name'),
+		description: getTranslation(
+			'home.services.other-services.hosting.description'
+		),
 		icon: <HostingIcon />,
 	},
 	{
 		id: 3,
-		name: 'Frontend App Development',
-		description:
-			'We create apps for you that follow modern UI/UX standards with a coherent flow.',
+		translationKeys: {
+			name: 'home.services.other-services.frontend.name',
+			description: 'home.services.other-services.frontend.description',
+		},
+		name: getTranslation('home.services.other-services.frontend.name'),
+		description: getTranslation(
+			'home.services.other-services.frontend.description'
+		),
 		icon: <FrontendIcon />,
 	},
 	{
 		id: 4,
-		name: 'Database Migrations',
-		description:
-			'Dealing with gigabytes of sensitive data can be tricky. We help you with managing all this data.',
+		translationKeys: {
+			name: 'home.services.other-services.database.name',
+			description: 'home.services.other-services.database.description',
+		},
+		name: getTranslation('home.services.other-services.database.name'),
+		description: getTranslation(
+			'home.services.other-services.database.description'
+		),
 		icon: <DatabaseIcon />,
 	},
 	{
 		id: 5,
-		name: 'Mobile App Development',
-		description:
-			'We create apps for you that are cross-platform, meaning your business will be able to reach out many more people.',
+		translationKeys: {
+			name: 'home.services.other-services.mobile.name',
+			description: 'home.services.other-services.mobile.description',
+		},
+		name: getTranslation('home.services.other-services.mobile.name'),
+		description: getTranslation(
+			'home.services.other-services.mobile.description'
+		),
 		icon: <MobileIcon />,
 	},
 	{
 		id: 6,
-		name: 'UI/UX Design',
-		description:
-			'We design easy-to-follow and beautiful user flows so that your customers have the best user experience.',
+		translationKeys: {
+			name: 'home.services.other-services.design.name',
+			description: 'home.services.other-services.design.description',
+		},
+		name: getTranslation('home.services.other-services.design.name'),
+		description: getTranslation(
+			'home.services.other-services.design.description'
+		),
 		icon: <DesignIcon />,
 	},
 ];

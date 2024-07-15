@@ -20,10 +20,50 @@
 		},
 		"services": {
 			"title": "Ons belangrijkste expertisegebied",
-			"description": "Deze gebieden hieronder zijn waar we goed in zijn",
+			"description": "Deze gebieden hieronder zijn waar we geweldig in zijn",
 			"subtitle": "Softwareontwikkeling",
 			"text_1": "Met een team van TU Delft-afgestudeerden streven we ernaar softwareoplossingen van de hoogste kwaliteit te leveren.",
-			"text_2": "10 jaar ervaring in het creëren van geweldige dingen."
+			"text_2": "10 jaar ervaring in het maken van geweldige dingen.",
+			"main-services": {
+				"full-stack-development": {
+					"name": "Full Stack Ontwikkeling",
+					"description": "Breng uw bedrijfsidee van begin tot eind tot leven met behulp van de nieuwste technologieën."
+				},
+				"consulting": {
+					"name": "Consultancy",
+					"description": "We helpen u bij het aanpakken van de moeilijkste softwareproblemen die u kunt tegenkomen."
+				},
+				"api-integration": {
+					"name": "API-integratie",
+					"description": "We helpen uw softwareoplossingen efficiënt te laten communiceren en integreren."
+				}
+			},
+			"other-services": {
+				"backend": {
+					"name": "Backend App Ontwikkeling",
+					"description": "We coderen een integreerbare, uitbreidbare en modulaire backend die vloeiend met uw app integreert."
+				},
+				"hosting": {
+					"name": "Hosting",
+					"description": "We helpen bij het beheren van alle rompslomp die komt kijken bij het plaatsen van uw website op het web."
+				},
+				"frontend": {
+					"name": "Frontend App Ontwikkeling",
+					"description": "We creëren apps voor u die voldoen aan moderne UI/UX-standaarden met een samenhangende flow."
+				},
+				"database": {
+					"name": "Database Migraties",
+					"description": "Het omgaan met gigabytes aan gevoelige data kan lastig zijn. We helpen u bij het beheren van al deze data."
+				},
+				"mobile": {
+					"name": "Mobiele App Ontwikkeling",
+					"description": "We creëren apps voor u die cross-platform zijn, waardoor uw bedrijf veel meer mensen kan bereiken."
+				},
+				"design": {
+					"name": "UI/UX Ontwerp",
+					"description": "We ontwerpen gemakkelijk te volgen en mooie gebruikersstromen zodat uw klanten de beste gebruikerservaring hebben."
+				}
+			}
 		},
 		"projects": {
 			"title": "Onze projecten",

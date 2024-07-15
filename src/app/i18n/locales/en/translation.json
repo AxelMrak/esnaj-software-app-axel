@@ -14,12 +14,7 @@
 		"contact": "Contact us"
 	},
 	"home": {
-		"wordsHero": [
-			"Quality",
-			"Passion",
-			"Efficiency",
-			"Speed"
-		],
+		"wordsHero": ["Quality", "Passion", "Efficiency", "Speed"],
 		"hero": {
 			"description": "Esnaj Software is your trusted web development partner in Delft. We specialize in creating cutting-edge websites and applications that drive business success."
 		},
@@ -28,7 +23,54 @@
 			"description": "These areas below are what we are great at",
 			"subtitle": "Software Building",
 			"text_1": "Having a team of TU Delft graduates, we strive to deliver software solutions of the highest standards.",
-			"text_2": "10 years of experience on creating amazing stuff."
+			"text_2": "10 years of experience on creating amazing stuff.",
+			"main-services": {
+				"full-stack-development": {
+					"name": "Full Stack Development",
+					"description": "Get your business idea to life from start to finish using the latest technologies.",
+					"long-description": "This includes the full package. A whole application, back end and front end.",
+					"items-extra": {
+						"Front-end": "A visual way to interact with the application (website, desktop and mobile)",
+						"Back-end": "The logic behind the application. (Database, connectivity to outside world)"
+					}
+				},
+				"consulting": {
+					"name": "Consulting",
+					"description": "We will aid you in the process of tackling the hardest software problems you can face.",
+					"long-description": "As technology is becoming more prevalent in society and technological progress is being rapidly made. We specialize in giving technological strategies to your business challenges and providing their respective solutions. Solutions that we provide include software architecture business applications."
+				},
+				"api-integration": {
+					"name": "API Integration",
+					"description": "We help make your software solutions communicate and integrate in the most efficient way possible.",
+					"long-description": "You might want to add existing functionalities from other companies to your application. Or you might want to provide a gateway for external machines to connect to your database. Using API's this is possible. In this way we could for example implement the google maps API in your system, the Chamber of Commerce. Or perhaps have your many machines be able to talk to eachother through the network."
+				}
+			},
+			"other-services": {
+				"backend": {
+					"name": "Backend App Development",
+					"description": "We code an integratable, extendable and modular back end that will fluently integrate with your app."
+				},
+				"hosting": {
+					"name": "Hosting",
+					"description": "We help manage all the hassles that comes with putting your website on the web."
+				},
+				"frontend": {
+					"name": "Frontend App Development",
+					"description": "We create apps for you that follow modern UI/UX standards with a coherent flow."
+				},
+				"database": {
+					"name": "Database Migrations",
+					"description": "Dealing with gigabytes of sensitive data can be tricky. We help you with managing all this data."
+				},
+				"mobile": {
+					"name": "Mobile App Development",
+					"description": "We create apps for you that are cross-platform, meaning your business will be able to reach out many more people."
+				},
+				"design": {
+					"name": "UI/UX Design",
+					"description": "We design easy-to-follow and beautiful user flows so that your customers have the best user experience."
+				}
+			}
 		},
 		"projects": {
 			"title": "Our projects",

@@ -16,7 +16,7 @@ function ServiceMain({ lng, slug }) {
 				{React.cloneElement(service.icon, {
 					className: 'w-20 h-20 fill-gray-light',
 				})}
-				<h1 className="text-4xl md:text-5xl font-light underline decoration-accent">
+				<h1 className="text-4xl md:text-5xl font-normal underline decoration-accent">
 					{service.name}
 				</h1>
 				<div className="w-full flex flex-col items-start gap-2">

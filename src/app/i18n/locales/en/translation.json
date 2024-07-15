@@ -77,7 +77,79 @@
 			"description": "Some of the projects we have successfully completed so far",
 			"button-view-all": "View all",
 			"button-view-less": "View less",
-			"know-more": "Know more"
+			"know-more": "Know more",
+			"main-projects": {
+				"career-portal-aruba": {
+					"title": "Career Portal Aruba",
+					"description": "A platform that connects job seekers with employers in Aruba.",
+					"what-we-did": [
+						"API Integration",
+						"Frontend Development",
+						"Backend Development",
+						"Database Management"
+					],
+					"technologies": [
+						"React",
+						"Node.js",
+						"MongoDB",
+						"Laravel",
+						"Python",
+						"PHP",
+						"JavaScript"
+					]
+				},
+				"pfister-weighbridge": {
+					"title": "Pfister Weighbridge",
+					"description": "Pfister Weighing Technology B.V. is the largest supplier of weighbridges in the Benelux with standard dimensions up to 20 x 3 m and up to 100,000 kg weighing capacity. Pfister needed help integrating their system with their customers in an automated process.",
+					"what-we-did": [
+						"API Integration",
+						"Integration with ERP systems",
+						"Supply calculation"
+					],
+					"technologies": ["Odoo 14", "Python"]
+				},
+				"rocketx": {
+					"title": "RocketX",
+					"description": "RocketX Accelerate Scale-ups by providing access to the best talent, smart capital and new revenue. RocketX is a platform that connects scale-ups with investors, talent, and customers.",
+					"what-we-did": ["Consulting", "API Connection"],
+					"technologies": ["Python", "Odoo", "Hubspot"]
+				},
+				"haven-van-rotterdam": {
+					"title": "Port of Rotterdam",
+					"description": "The port of Rotterdam is the largest port and industrial complex in Europe with a total cargo throughput of 470 million tons in 2019. The port authority needed a vacancy platform for it and companies within the network.",
+					"what-we-did": ["API Integration", "Built a web application"],
+					"technologies": ["Python", "Django", "Elastic Search", "MongoDB"]
+				},
+				"briqwise": {
+					"title": "Briqwise",
+					"description": "Briqwise is a platform that connects investors with real estate projects. The platform is designed to help investors find the right project and help project owners find the right investor.",
+					"what-we-did": [
+						"API Integration",
+						"Frontend Development",
+						"Backend Development",
+						"Database Management"
+					],
+					"technologies": [
+						"React",
+						"Node.js",
+						"MongoDB",
+						"Laravel",
+						"Python",
+						"PHP",
+						"JavaScript"
+					]
+				},
+				"ijsbier-steenwijk": {
+					"title": "IJsbier Steenwijk",
+					"description": "IceBear collects waste wood from the Steenwijk area for the production of circular pallet blocks. The waste wood is further reduced in size and cleaned, whereby parts such as metal, plastic and sand are separated. The cleaned wood is dried by the biomass boiler. For this we use the residual heat after the supply of green electricity to the grid and hot water for weed control. With six different presses, the dried wood is processed into pallet blocks with a variety of molds.",
+					"what-we-did": [
+						"Automation of labeling process",
+						"Automatic tracking of supplies",
+						"API Integration"
+					],
+					"technologies": ["Python", "Odoo 14.0"]
+				}
+			}
 		},
 		"contact": {
 			"title": "Contact us",
@@ -87,5 +159,9 @@
 		"misc": {
 			"nl": "Delft, Netherlands"
 		}
+	},
+	"project":{
+		"what-we-did": "What we did",
+		"technologies": "Technologies"
 	}
 }

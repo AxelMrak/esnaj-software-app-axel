@@ -26,11 +26,25 @@ const updateTranslations = () => {
 			if (service.itemsExtra) {
 				service.itemsExtra.forEach((item) => {
 					item.text = getTranslation(item.translationKeys.text);
-					
 				});
 			}
 		});
 	};
+
+	const updateProjectTranslations = (projects) => {
+		projects.forEach((project) => {
+			project.title = getTranslation(project.translationKeys.title);
+			project.description = getTranslation(project.translationKeys.description);
+			project.whatWeDid = project.translationKeys.whatWeDid.map((key) =>
+				getTranslation(key)
+			);
+			project.technologies = project.translationKeys.technologies.map((key) =>
+				getTranslation(key)
+			);
+		});
+	};
+
+	updateProjectTranslations(projects);
 
 	updateServiceTranslations(mainServices);
 	updateServiceTranslations(otherServices);
@@ -213,44 +227,272 @@ export const otherServices = [
 export const projects = [
 	{
 		id: 1,
-		title: 'Career Portal Aruba',
-		description: 'Description of project 1',
+		translationKeys: {
+			title: 'home.projects.main-projects.career-portal-aruba.title',
+			description:
+				'home.projects.main-projects.career-portal-aruba.description',
+			whatWeDid: [
+				'home.projects.main-projects.career-portal-aruba.what-we-did.0',
+				'home.projects.main-projects.career-portal-aruba.what-we-did.1',
+				'home.projects.main-projects.career-portal-aruba.what-we-did.2',
+				'home.projects.main-projects.career-portal-aruba.what-we-did.3',
+			],
+			technologies: [
+				'home.projects.main-projects.career-portal-aruba.technologies.0',
+				'home.projects.main-projects.career-portal-aruba.technologies.1',
+				'home.projects.main-projects.career-portal-aruba.technologies.2',
+				'home.projects.main-projects.career-portal-aruba.technologies.3',
+				'home.projects.main-projects.career-portal-aruba.technologies.4',
+				'home.projects.main-projects.career-portal-aruba.technologies.5',
+				'home.projects.main-projects.career-portal-aruba.technologies.6',
+			],
+		},
+		title: getTranslation(
+			'home.projects.main-projects.career-portal-aruba.title'
+		),
+		description: getTranslation(
+			'home.projects.main-projects.career-portal-aruba.description'
+		),
+		whatWeDid: [
+			getTranslation(
+				'home.projects.main-projects.career-portal-aruba.what-we-did.0'
+			),
+			getTranslation(
+				'home.projects.main-projects.career-portal-aruba.what-we-did.1'
+			),
+			getTranslation(
+				'home.projects.main-projects.career-portal-aruba.what-we-did.2'
+			),
+			getTranslation(
+				'home.projects.main-projects.career-portal-aruba.what-we-did.3'
+			),
+		],
+		technologies: [
+			getTranslation(
+				'home.projects.main-projects.career-portal-aruba.technologies.0'
+			),
+			getTranslation(
+				'home.projects.main-projects.career-portal-aruba.technologies.1'
+			),
+			getTranslation(
+				'home.projects.main-projects.career-portal-aruba.technologies.2'
+			),
+			getTranslation(
+				'home.projects.main-projects.career-portal-aruba.technologies.3'
+			),
+			getTranslation(
+				'home.projects.main-projects.career-portal-aruba.technologies.4'
+			),
+			getTranslation(
+				'home.projects.main-projects.career-portal-aruba.technologies.5'
+			),
+			getTranslation(
+				'home.projects.main-projects.career-portal-aruba.technologies.6'
+			),
+		],
 		link: 'career-portal-aruba',
 		image: '/images/projects/cpa-img.webp',
 	},
 	{
 		id: 2,
-		title: 'Pfister Weighbridge',
-		description: 'Description of project 2',
+		translationKeys: {
+			title: 'home.projects.main-projects.pfister-weighbridge.title',
+			description:
+				'home.projects.main-projects.pfister-weighbridge.description',
+			whatWeDid: [
+				'home.projects.main-projects.pfister-weighbridge.what-we-did.0',
+				'home.projects.main-projects.pfister-weighbridge.what-we-did.1',
+				'home.projects.main-projects.pfister-weighbridge.what-we-did.2',
+			],
+			technologies: [
+				'home.projects.main-projects.pfister-weighbridge.technologies.0',
+				'home.projects.main-projects.pfister-weighbridge.technologies.1',
+			],
+		},
+		title: getTranslation(
+			'home.projects.main-projects.pfister-weighbridge.title'
+		),
+		description: getTranslation(
+			'home.projects.main-projects.pfister-weighbridge.description'
+		),
+		whatWeDid: [
+			getTranslation(
+				'home.projects.main-projects.pfister-weighbridge.what-we-did.0'
+			),
+			getTranslation(
+				'home.projects.main-projects.pfister-weighbridge.what-we-did.1'
+			),
+			getTranslation(
+				'home.projects.main-projects.pfister-weighbridge.what-we-did.2'
+			),
+		],
+		technologies: [
+			getTranslation(
+				'home.projects.main-projects.pfister-weighbridge.technologies.0'
+			),
+			getTranslation(
+				'home.projects.main-projects.pfister-weighbridge.technologies.1'
+			),
+		],
 		link: 'pfister-weighbridge',
 		image: '/images/projects/pfister-image.webp',
 	},
 	{
 		id: 3,
-		title: 'RocketX',
-		description: 'Description of project 3',
+		translationKeys: {
+			title: 'home.projects.main-projects.rocketx.title',
+			description: 'home.projects.main-projects.rocketx.description',
+			whatWeDid: [
+				'home.projects.main-projects.rocketx.what-we-did.0',
+				'home.projects.main-projects.rocketx.what-we-did.1',
+			],
+			technologies: [
+				'home.projects.main-projects.rocketx.technologies.0',
+				'home.projects.main-projects.rocketx.technologies.1',
+				'home.projects.main-projects.rocketx.technologies.2',
+				'home.projects.main-projects.rocketx.technologies.3',
+			],
+		},
+		title: getTranslation('home.projects.main-projects.rocketx.title'),
+		description: getTranslation(
+			'home.projects.main-projects.rocketx.description'
+		),
+		whatWeDid: [
+			getTranslation('home.projects.main-projects.rocketx.what-we-did.0'),
+			getTranslation('home.projects.main-projects.rocketx.what-we-did.1'),
+		],
+		technologies: [
+			getTranslation('home.projects.main-projects.rocketx.technologies.0'),
+			getTranslation('home.projects.main-projects.rocketx.technologies.1'),
+			getTranslation('home.projects.main-projects.rocketx.technologies.2'),
+		],
 		link: 'rocketx',
 		image: '/images/projects/rocketX-image.webp',
 	},
 	{
 		id: 4,
-		title: 'Haven van Rotterdam',
-		description: 'Description of project 4',
+		translationKeys: {
+			title: 'home.projects.main-projects.haven-van-rotterdam.title',
+			description:
+				'home.projects.main-projects.haven-van-rotterdam.description',
+			whatWeDid: [
+				'home.projects.main-projects.haven-van-rotterdam.what-we-did.0',
+				'home.projects.main-projects.haven-van-rotterdam.what-we-did.1',
+			],
+			technologies: [
+				'home.projects.main-projects.haven-van-rotterdam.technologies.0',
+				'home.projects.main-projects.haven-van-rotterdam.technologies.1',
+				'home.projects.main-projects.haven-van-rotterdam.technologies.2',
+				'home.projects.main-projects.haven-van-rotterdam.technologies.3',
+			],
+		},
+		title: getTranslation(
+			'home.projects.main-projects.haven-van-rotterdam.title'
+		),
+		description: getTranslation(
+			'home.projects.main-projects.haven-van-rotterdam.description'
+		),
+		whatWeDid: [
+			getTranslation(
+				'home.projects.main-projects.haven-van-rotterdam.what-we-did.0'
+			),
+			getTranslation(
+				'home.projects.main-projects.haven-van-rotterdam.what-we-did.1'
+			),
+		],
+		technologies: [
+			getTranslation(
+				'home.projects.main-projects.haven-van-rotterdam.technologies.0'
+			),
+			getTranslation(
+				'home.projects.main-projects.haven-van-rotterdam.technologies.1'
+			),
+			getTranslation(
+				'home.projects.main-projects.haven-van-rotterdam.technologies.2'
+			),
+			getTranslation(
+				'home.projects.main-projects.haven-van-rotterdam.technologies.3'
+			),
+		],
 		link: 'haven-van-rotterdam',
 		image: '/images/projects/haven-image.webp',
 	},
 	{
 		id: 5,
-		title: 'Briqwise',
-		description: 'Description of project 5',
+		translationKeys: {
+			title: 'home.projects.main-projects.briqwise.title',
+			description: 'home.projects.main-projects.briqwise.description',
+			whatWeDid: [
+				'home.projects.main-projects.briqwise.what-we-did.0',
+				'home.projects.main-projects.briqwise.what-we-did.1',
+				'home.projects.main-projects.briqwise.what-we-did.2',
+				'home.projects.main-projects.briqwise.what-we-did.3',
+			],
+			technologies: [
+				'home.projects.main-projects.briqwise.technologies.0',
+				'home.projects.main-projects.briqwise.technologies.1',
+				'home.projects.main-projects.briqwise.technologies.2',
+				'home.projects.main-projects.briqwise.technologies.3',
+				'home.projects.main-projects.briqwise.technologies.4',
+				'home.projects.main-projects.briqwise.technologies.5',
+				'home.projects.main-projects.briqwise.technologies.6',
+			],
+		},
+		title: getTranslation('home.projects.main-projects.briqwise.title'),
+		description: getTranslation(
+			'home.projects.main-projects.briqwise.description'
+		),
+		whatWeDid: [
+			getTranslation('home.projects.main-projects.briqwise.what-we-did.0'),
+			getTranslation('home.projects.main-projects.briqwise.what-we-did.1'),
+			getTranslation('home.projects.main-projects.briqwise.what-we-did.2'),
+			getTranslation('home.projects.main-projects.briqwise.what-we-did.3'),
+		],
+		technologies: [
+			getTranslation('home.projects.main-projects.briqwise.technologies.0'),
+			getTranslation('home.projects.main-projects.briqwise.technologies.1'),
+			getTranslation('home.projects.main-projects.briqwise.technologies.2'),
+			getTranslation('home.projects.main-projects.briqwise.technologies.3'),
+			getTranslation('home.projects.main-projects.briqwise.technologies.4'),
+			getTranslation('home.projects.main-projects.briqwise.technologies.5'),
+			getTranslation('home.projects.main-projects.briqwise.technologies.6'),
+		],
 		link: 'briqwise',
 		image: '/images/projects/briqwise-image.webp',
 	},
 	{
 		id: 6,
-		title: 'IJsbier Steenwijk',
-		description: 'Description of project 6',
+		translationKeys: {
+			title: 'home.projects.main-projects.ijsbier-steenwijk.title',
+			description:
+				'home.projects.main-projects.ijsbier-steenwijk.description',
+			whatWeDid: [
+				'home.projects.main-projects.ijsbier-steenwijk.what-we-did.0',
+				'home.projects.main-projects.ijsbier-steenwijk.what-we-did.1',
+				'home.projects.main-projects.ijsbier-steenwijk.what-we-did.2',
+
+			],
+			technologies: [
+				'home.projects.main-projects.ijsbier-steenwijk.technologies.0',
+				'home.projects.main-projects.ijsbier-steenwijk.technologies.1',
+			],				
+
+		},
+
+		title: getTranslation('home.projects.main-projects.ijsbier-steenwijk.title'),
+		description: getTranslation(
+			'home.projects.main-projects.ijsbier-steenwijk.description'
+		),
+		whatWeDid: [
+			getTranslation('home.projects.main-projects.ijsbier-steenwijk.what-we-did.0'),
+			getTranslation('home.projects.main-projects.ijsbier-steenwijk.what-we-did.1'),
+			getTranslation('home.projects.main-projects.ijsbier-steenwijk.what-we-did.2'),
+		],
+		technologies: [
+			getTranslation('home.projects.main-projects.ijsbier-steenwijk.technologies.0'),
+			getTranslation('home.projects.main-projects.ijsbier-steenwijk.technologies.1'),
+		],
 		link: 'ijsbier-steenwijk',
-		image: '/images/projects/IJsbier-image.webp',
+		image: '/images/projects/ijsbier-image.webp',
 	},
 ];

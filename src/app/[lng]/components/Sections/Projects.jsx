@@ -70,7 +70,9 @@ function Projects({ lng }) {
 			{viewAll ? (
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
 					{projects.map((project, index) => (
+							
 						<div key={index} className="flex flex-col items-start gap-4">
+			
 							<div className="relative h-60 w-full rounded-sm">
 								<Image
 									src={project.image}
@@ -83,7 +85,7 @@ function Projects({ lng }) {
 							<div className="w-full flex flex-col items-start gap-2 mt-6">
 								<h3 className="text-2xl font-normal">{project.title}</h3>
 								<Link
-									href={`/projects/${project.id}`}
+									href={`${lng}/projects/${project.link}`}
 									className="underline text-xl font-light decoration-accent"
 								>
 									{t('home.projects.know-more')}
@@ -120,7 +122,7 @@ function Projects({ lng }) {
 							<div className="w-full flex flex-col items-start gap-2 mt-6">
 								<h3 className="text-2xl font-normal">{project.title}</h3>
 								<Link
-									href={`/projects/${project.id}`}
+									href={`${lng}/projects/${project.link}`}
 									className="underline text-xl font-light decoration-accent"
 								>
 									{t('home.projects.know-more')}

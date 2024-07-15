@@ -78,7 +78,80 @@
 			"description": "Enkele van de projecten die we tot nu toe met succes hebben afgerond",
 			"button-view-all": "Bekijk alles",
 			"button-view-less": "Bekijk minder",
-			"know-more": "Meer weten"
+			"know-more": "Meer weten",
+			"main-projects": {
+				"career-portal-aruba": {
+					"title": "Career Portal Aruba",
+					"description": "Career Portal Aruba is een platform dat werkzoekenden verbindt met werkgevers in Aruba. Het platform is ontworpen om werkzoekenden te helpen de juiste baan te vinden en werkgevers om de juiste kandidaat te vinden.",
+					"what-we-did": [
+						"API Integratie",
+						"Frontend Ontwikkeling",
+						"Backend Ontwikkeling",
+						"Database Beheer"
+					],
+					"technologies": [
+						"React",
+						"Node.js",
+						"MongoDB",
+						"Laravel",
+						"Python",
+						"PHP",
+						"JavaScript"
+					]
+				},
+				"pfister-weighbridge": {
+					"title": "Pfister Weegbrug",
+					"description": "Pfister Weighing Technology B.V. is de grootste leverancier van weegbruggen in de Benelux met standaardafmetingen tot 20 x 3 m en een weegcapaciteit tot 100.000 kg. Pfister had hulp nodig bij het integreren van hun systeem met hun klanten in een geautomatiseerd proces.",
+					"what-we-did": [
+						"API Integratie",
+						"Integratie met ERP-systemen",
+						"Voorraadberekening"
+					],
+					"technologies": ["Odoo 14", "Python"]
+				},
+				"rocketx": {
+					"title": "RocketX",
+					"description": "RocketX versnelt scale-ups door toegang te bieden tot het beste talent, slim kapitaal en nieuwe inkomsten. RocketX is een platform dat scale-ups verbindt met investeerders, talent en klanten.",
+					"what-we-did": ["Consultancy", "API Koppeling"],
+					"technologies": ["Python", "Odoo", "Hubspot"]
+				},
+				"haven-van-rotterdam": {
+					"title": "Haven van Rotterdam",
+					"description": "De haven van Rotterdam is de grootste haven en het grootste industriële complex van Europa met een totale goederenoverslag van 470 miljoen ton in 2019. De havenautoriteit had een vacatureplatform nodig voor zichzelf en bedrijven binnen het netwerk.",
+					"what-we-did": ["API Integratie", "Webapplicatie gebouwd"],
+					"technologies": ["Python", "Django", "Elastic Search", "MongoDB"]
+				},
+				"briqwise": {
+					"title": "Briqwise",
+					"description": "Briqwise is een platform dat investeerders verbindt met vastgoedprojecten. Het platform is ontworpen om investeerders te helpen het juiste project te vinden en projecteigenaren om de juiste investeerder te vinden.",
+					"what-we-did": [
+						"API Integratie",
+						"Frontend Ontwikkeling",
+						"Backend Ontwikkeling",
+						"Database Beheer"
+					],
+					"technologies": [
+						"React",
+						"Node.js",
+						"MongoDB",
+						"Laravel",
+						"Python",
+						"PHP",
+						"JavaScript"
+					]
+				},
+				"ijsbier-steenwijk": {
+					"title": "IJsbier Steenwijk",
+					"description": "IceBear verzamelt afvalhout uit de omgeving van Steenwijk voor de productie van circulaire palletblokken. Het afvalhout wordt verder verkleind en gereinigd, waarbij onderdelen zoals metaal, plastic en zand worden gescheiden. Het gereinigde hout wordt gedroogd door de biomassaketel. Hiervoor gebruiken we de restwarmte na de levering van groene elektriciteit aan het net en warm water voor onkruidbestrijding. Met zes verschillende persen wordt het gedroogde hout verwerkt tot palletblokken met verschillende vormen.",
+					"what-we-did": [
+						"Automatisering van labelproces",
+						"Automatische voorraadtracking",
+						"API Eindpunt"
+					],
+					"technologies": ["Python", "Odoo 14.0"]
+				}
+			}
+			
 		},
 		"contact": {
 			"title": "Contact ons",
@@ -88,5 +161,9 @@
 		"misc": {
 			"nl": "Delft, Nederland"
 		}
+	},
+	"project": {
+		"what-we-did": "Wat we hebben gedaan",
+		"technologies": "Technologieën"
 	}
 }

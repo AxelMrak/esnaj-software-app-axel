@@ -24,6 +24,13 @@
 			"subtitle": "Softwareontwikkeling",
 			"text_1": "Met een team van TU Delft-afgestudeerden streven we ernaar softwareoplossingen van de hoogste kwaliteit te leveren.",
 			"text_2": "10 jaar ervaring in het creëren van geweldige dingen."
+		},
+		"projects": {
+			"title": "Onze projecten",
+			"description": "Enkele van de projecten die we tot nu toe met succes hebben afgerond",
+			"button-view-all": "Bekijk alles",
+			"button-view-less": "Bekijk minder",
+			"know-more": "Meer weten"
 		}
 	}
 }

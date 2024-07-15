@@ -4,7 +4,7 @@ import Image from 'next/image';
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
-import { Navigation, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import { A11y, Autoplay } from 'swiper/modules';
 import { useBreakpoints } from '@/context/BreakpointsContext';
 
 function Companies() {
@@ -20,11 +20,9 @@ function Companies() {
 	return (
 		<section className="w-full h-32 my-16 px-8">
 			<Swiper
-				modules={[Navigation, Scrollbar, A11y, Autoplay]}
+				modules={[ A11y, Autoplay]}
 				spaceBetween={40}
 				slidesPerView={getSlidesPerView()}
-				navigation={isDesktop}
-				scrollbar={{ draggable: true }}
 				loop={true}
 				autoplay={{ delay: 2500 }}
 				className="w-full h-full"

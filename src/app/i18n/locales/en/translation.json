@@ -29,6 +29,13 @@
 			"subtitle": "Software Building",
 			"text_1": "Having a team of TU Delft graduates, we strive to deliver software solutions of the highest standards.",
 			"text_2": "10 years of experience on creating amazing stuff."
+		},
+		"projects": {
+			"title": "Our projects",
+			"description": "Some of the projects we have successfully completed so far",
+			"button-view-all": "View all",
+			"button-view-less": "View less",
+			"know-more": "Know more"
 		}
 	}
 }

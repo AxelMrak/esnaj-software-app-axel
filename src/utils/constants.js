@@ -126,3 +126,48 @@ export const otherServices = [
 		icon: <DesignIcon />,
 	},
 ];
+
+export const projects = [
+	{
+		id: 1,
+		title: 'Career Portal Aruba',
+		description: 'Description of project 1',
+		link: 'career-portal-aruba',
+		image: '/images/projects/cpa-img.webp',
+	},
+	{
+		id: 2,
+		title: 'Pfister Weighbridge',
+		description: 'Description of project 2',
+		link: 'pfister-weighbridge',
+		image: '/images/projects/pfister-image.webp',
+	},
+	{
+		id: 3,
+		title: 'RocketX',
+		description: 'Description of project 3',
+		link: 'rocketx',
+		image: '/images/projects/rocketX-image.webp',
+	},
+	{
+		id: 4,
+		title: 'Haven van Rotterdam',
+		description: 'Description of project 4',
+		link: 'haven-van-rotterdam',
+		image: '/images/projects/haven-image.webp',
+	},
+	{
+		id: 5,
+		title: 'Briqwise',
+		description: 'Description of project 5',
+		link: 'briqwise',
+		image: '/images/projects/briqwise-image.webp',
+	},
+	{
+		id: 6,
+		title: 'IJsbier Steenwijk',
+		description: 'Description of project 6',
+		link: 'ijsbier-steenwijk',
+		image: '/images/projects/IJsbier-image.webp',
+	},
+];

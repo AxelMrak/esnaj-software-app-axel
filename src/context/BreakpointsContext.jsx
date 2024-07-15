@@ -5,6 +5,7 @@ import { useMediaQuery } from 'react-responsive';
 const BreakpointsContext = createContext();
 
 export const BreakpointsProvider = ({ children }) => {
+
 	const isMobile = useMediaQuery({ maxWidth: 767 });
 	const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 1024 });
 	const isDesktop = useMediaQuery({ minWidth: 1025 });
@@ -14,6 +15,8 @@ export const BreakpointsProvider = ({ children }) => {
 		isTablet,
 		isDesktop,
 	};
+
+	
 
 	return (
 		<BreakpointsContext.Provider value={value}>

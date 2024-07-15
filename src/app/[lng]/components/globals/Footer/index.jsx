@@ -10,8 +10,8 @@ function Footer({ lng }) {
 	const { t } = useTranslation(lng);
 
 	return (
-		<footer className="w-full flex flex-row items-center justify-between p-4 border-t border-gray-dark">
-			<div className="w-1/3 flex flex-row items-center gap-4 p-4">
+		<footer className="w-full h-max flex flex-col items-start md:flex-row md:items-center justify-between p-4 border-t border-gray-dark">
+			<div className="w-1/3 flex flex-row flex-wrap items-center gap-4 p-4">
 				<Logo className="w-28  h-28 " />
 				<div className="flex flex-col gap-2">
 					<p className="text-3xl font-normal text-gray-dark line-clamp-2">

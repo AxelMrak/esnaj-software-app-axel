@@ -31,6 +31,11 @@
 			"button-view-all": "Bekijk alles",
 			"button-view-less": "Bekijk minder",
 			"know-more": "Meer weten"
+		},
+		"contact": {
+			"title": "Contact ons",
+			"description": "We staan altijd klaar om u te helpen met uw project. Neem nu contact met ons op en laten we beginnen.",
+			"button": "Stuur ons een bericht"
 		}
 	}
 }

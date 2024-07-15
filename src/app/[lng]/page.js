@@ -6,6 +6,7 @@ import HeroHome from './components/Sections/HeroHome';
 import Companies from './components/Sections/Companies';
 import Services from './components/Sections/Services';
 import Projects from './components/Sections/Projects';
+import Contact from './components/Sections/Contact';
 
 export default async function Page({ params: { lng } }) {
 	
@@ -16,5 +17,6 @@ export default async function Page({ params: { lng } }) {
 		<Companies />
 		<Services lng={lng} />
 		<Projects lng={lng} />
+		<Contact lng={lng} />
 	</main>;
 }

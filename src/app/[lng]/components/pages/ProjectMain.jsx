@@ -22,6 +22,7 @@ function ProjectMain({ lng, slug }) {
 						alt={project.name}
 						layout="fill"
 						objectFit="cover"
+						className="grayscale"
 					/>
 				</div>
 			</div>

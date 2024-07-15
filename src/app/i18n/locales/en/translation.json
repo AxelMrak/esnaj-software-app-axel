@@ -163,5 +163,15 @@
 	"project":{
 		"what-we-did": "What we did",
 		"technologies": "Technologies"
+	},
+	"about": {
+		"title": "About us",
+		"text": "Esnaj Software is a group of ambitious software engineers. With many years of experience they've decided to create their own agency to provide software solutions for companies. We are a team of young and ambitious software engineers who are passionate about creating software solutions that help businesses grow. We are based in Delft, Netherlands.",
+		"team": "Our team",
+		"software-eng": "Software Engineer",
+		"software-eng-consultant": "Software Engineer Consultant",
+		"designer": "UI/UX Designer",
+		"backend": "Backend Engineer",
+		"frontend": "Frontend Engineer"
 	}
 }

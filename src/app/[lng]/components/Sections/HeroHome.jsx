@@ -20,7 +20,7 @@ function HeroHome({ lng }) {
 				</div>
 			</article>
 			<article
-				className="w-full md:w-3/4 h-full bg-center bg-contain sm:bg-cover md:bg-contain bg-no-repeat"
+				className="w-full md:w-3/4 h-full bg-center bg-contain sm:bg-cover md:bg-contain bg-no-repeat grayscale"
 				style={{ backgroundImage: 'url(/images/hero-image.webp)' }}
 			/>
 		</section>

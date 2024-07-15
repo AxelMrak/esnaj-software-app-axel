@@ -17,6 +17,13 @@
 		"wordsHero": ["Kwaliteit", "Passie", "Efficiëntie", "Snelheid"],
 		"hero": {
 			"description": "Esnaj Software is uw vertrouwde partner voor webontwikkeling in Delft. Wij zijn gespecialiseerd in het creëren van geavanceerde websites en applicaties die zakelijk succes stimuleren."
+		},
+		"services": {
+			"title": "Ons belangrijkste expertisegebied",
+			"description": "Deze gebieden hieronder zijn waar we goed in zijn",
+			"subtitle": "Softwareontwikkeling",
+			"text_1": "Met een team van TU Delft-afgestudeerden streven we ernaar softwareoplossingen van de hoogste kwaliteit te leveren.",
+			"text_2": "10 jaar ervaring in het creëren van geweldige dingen."
 		}
 	}
 }

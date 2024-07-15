@@ -4,6 +4,7 @@ import { useTranslation } from '../i18n';
 import LanguageSwitcher from './components/globals/LanguageSwitcher';
 import HeroHome from './components/Sections/HeroHome';
 import Companies from './components/Sections/Companies';
+import Services from './components/Sections/Services';
 
 export default async function Page({ params: { lng } }) {
 	const { t } = await useTranslation(lng);
@@ -11,5 +12,6 @@ export default async function Page({ params: { lng } }) {
 	return <main className='w-full flex flex-col grap-6'>
 		<HeroHome lng={lng} />
 		<Companies />
+		<Services lng={lng} />
 	</main>;
 }

@@ -22,6 +22,13 @@
 		],
 		"hero": {
 			"description": "Esnaj Software is your trusted web development partner in Delft. We specialize in creating cutting-edge websites and applications that drive business success."
+		},
+		"services": {
+			"title": "Our main area of expertise",
+			"description": "These areas below are what we are great at",
+			"subtitle": "Software Building",
+			"text_1": "Having a team of TU Delft graduates, we strive to deliver software solutions of the highest standards.",
+			"text_2": "10 years of experience on creating amazing stuff."
 		}
 	}
 }

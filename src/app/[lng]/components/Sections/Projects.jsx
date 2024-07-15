@@ -85,7 +85,7 @@ function Projects({ lng }) {
 							<div className="w-full flex flex-col items-start gap-2 mt-6">
 								<h3 className="text-2xl font-normal">{project.title}</h3>
 								<Link
-									href={`${lng}/projects/${project.link}`}
+									href={`/${lng}/projects/${project.link}`}
 									className="underline text-xl font-light decoration-accent"
 								>
 									{t('home.projects.know-more')}
@@ -122,7 +122,7 @@ function Projects({ lng }) {
 							<div className="w-full flex flex-col items-start gap-2 mt-6">
 								<h3 className="text-2xl font-normal">{project.title}</h3>
 								<Link
-									href={`${lng}/projects/${project.link}`}
+									href={`/${lng}/projects/${project.link}`}
 									className="underline text-xl font-light decoration-accent"
 								>
 									{t('home.projects.know-more')}

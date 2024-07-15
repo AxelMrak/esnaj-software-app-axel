@@ -9,7 +9,7 @@ function ServiceMain({ lng, slug }) {
 	const { t } = useTranslation(lng);
 
 	const service = mainServices.find((service) => service.link === slug);
-	console.log(service);
+
 	return (
 		<main className="w-full min-h-screen flex flex-col gap-6 p-6 2xl:mx-auto">
 			<div className="w-full h-full flex flex-col gap-8 justify-center items-start">

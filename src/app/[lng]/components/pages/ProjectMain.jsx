@@ -8,7 +8,7 @@ function ProjectMain({ lng, slug }) {
 	const { t } = useTranslation(lng);
 
 	const project = projects.find((project) => project.link === slug);
-	console.log(project);
+
 	return (
 		<main className="w-full h-full flex flex-col items-center justify-between">
 			<div className="w-full h-[400px] flex items-center justify-center relative">

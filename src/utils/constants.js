@@ -464,33 +464,42 @@ export const projects = [
 		id: 6,
 		translationKeys: {
 			title: 'home.projects.main-projects.ijsbier-steenwijk.title',
-			description:
-				'home.projects.main-projects.ijsbier-steenwijk.description',
+			description: 'home.projects.main-projects.ijsbier-steenwijk.description',
 			whatWeDid: [
 				'home.projects.main-projects.ijsbier-steenwijk.what-we-did.0',
 				'home.projects.main-projects.ijsbier-steenwijk.what-we-did.1',
 				'home.projects.main-projects.ijsbier-steenwijk.what-we-did.2',
-
 			],
 			technologies: [
 				'home.projects.main-projects.ijsbier-steenwijk.technologies.0',
 				'home.projects.main-projects.ijsbier-steenwijk.technologies.1',
-			],				
-
+			],
 		},
 
-		title: getTranslation('home.projects.main-projects.ijsbier-steenwijk.title'),
+		title: getTranslation(
+			'home.projects.main-projects.ijsbier-steenwijk.title'
+		),
 		description: getTranslation(
 			'home.projects.main-projects.ijsbier-steenwijk.description'
 		),
 		whatWeDid: [
-			getTranslation('home.projects.main-projects.ijsbier-steenwijk.what-we-did.0'),
-			getTranslation('home.projects.main-projects.ijsbier-steenwijk.what-we-did.1'),
-			getTranslation('home.projects.main-projects.ijsbier-steenwijk.what-we-did.2'),
+			getTranslation(
+				'home.projects.main-projects.ijsbier-steenwijk.what-we-did.0'
+			),
+			getTranslation(
+				'home.projects.main-projects.ijsbier-steenwijk.what-we-did.1'
+			),
+			getTranslation(
+				'home.projects.main-projects.ijsbier-steenwijk.what-we-did.2'
+			),
 		],
 		technologies: [
-			getTranslation('home.projects.main-projects.ijsbier-steenwijk.technologies.0'),
-			getTranslation('home.projects.main-projects.ijsbier-steenwijk.technologies.1'),
+			getTranslation(
+				'home.projects.main-projects.ijsbier-steenwijk.technologies.0'
+			),
+			getTranslation(
+				'home.projects.main-projects.ijsbier-steenwijk.technologies.1'
+			),
 		],
 		link: 'ijsbier-steenwijk',
 		image: '/images/projects/ijsbier-image.webp',

@@ -6,7 +6,5 @@ import About from '../components/Sections/About';
 
 export default async function Page({ params: { lng } }) {
 	const { t } = await useTranslation(lng);
-	return (
-		<About lng={lng} />
-	);
+	return <About lng={lng} />;
 }

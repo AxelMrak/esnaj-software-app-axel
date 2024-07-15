@@ -2,7 +2,14 @@
 import React from 'react';
 import Link from 'next/link';
 
-function MobileNav({ isOpen, routes, lng, t }) {
+function MobileNav({ isOpen, close, routes, lng, t }) {
+
+	const handleClickLink = () => {
+		setTimeout(() => {
+			close();
+		}, 500);
+	}
+
 	return (
 		<nav
 			className={`w-full h-full bg-white fixed top-24 left-0 py-12 px-6 flex flex-col gap-4 font-[300] text-4xl md:hidden transform ${
@@ -11,8 +18,10 @@ function MobileNav({ isOpen, routes, lng, t }) {
 		>
 			{routes.slice(0, routes.length - 1).map((route, index) => (
 				<Link
+					onClick={handleClickLink}
 					key={index}
 					href={`/${lng}/${route.link}`}
+					
 					className="hover:text-accent transition-opacity duration-300 ease-in-out"
 				>
 					{t(`routes.${route.name}`)}

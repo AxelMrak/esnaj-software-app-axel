@@ -36,12 +36,12 @@ export default function RootLayout({ children, params: { lng } }) {
 			<head />
 			<body>
 				<Suspense fallback="Loading...">
-				<BreakpointsProvider>
-					<Header lng={lng} />
-					{children}
-					<LanguageSwitcher lng={lng} />
-					<Footer lng={lng} />
-				</BreakpointsProvider>
+					<BreakpointsProvider>
+						<Header lng={lng} />
+						{children}
+						<LanguageSwitcher lng={lng} />
+						<Footer lng={lng} />
+					</BreakpointsProvider>
 				</Suspense>
 			</body>
 		</html>

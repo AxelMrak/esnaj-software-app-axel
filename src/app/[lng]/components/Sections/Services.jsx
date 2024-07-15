@@ -50,7 +50,7 @@ function Services({ lng }) {
 					{otherServices.map((service) => (
 						<article
 							key={service.id}
-							className="w-full flex flex-col items-start justify-start p-6 gap-2 relative"
+							className="w-full flex flex-col items-start justify-start py-4 gap-2 relative"
 						>
 							<div className="w-full h-max flex flex-col items-start md:flex-row md:items-center gap-4">
 								{React.cloneElement(service.icon, {

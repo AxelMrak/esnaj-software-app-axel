@@ -11,62 +11,44 @@ import {
 } from '@/app/[lng]/components/globals/Icons/Services';
 import i18next from 'i18next';
 
-const getTranslation = (key) => {
-	return i18next.t(key);
+const getTranslation = (key) => i18next.t(key);
+
+const updateTranslations = () => {
+	const updateServiceTranslations = (services) => {
+		services.forEach((service) => {
+			service.name = getTranslation(service.translationKeys.name);
+			service.description = getTranslation(service.translationKeys.description);
+			if (service.translationKeys.longDescription) {
+				service.longDescription = getTranslation(
+					service.translationKeys.longDescription
+				);
+			}
+			if (service.itemsExtra) {
+				service.itemsExtra.forEach((item) => {
+					item.text = getTranslation(item.translationKeys.text);
+					
+				});
+			}
+		});
+	};
+
+	updateServiceTranslations(mainServices);
+	updateServiceTranslations(otherServices);
 };
 
-i18next.on('languageChanged', () => {
-	mainServices.forEach((service) => {
-		service.name = getTranslation(service.translationKeys.name);
-		service.description = getTranslation(service.translationKeys.description);
-	});
-	otherServices.forEach((service) => {
-		service.name = getTranslation(service.translationKeys.name);
-		service.description = getTranslation(service.translationKeys.description);
-	});
-});
+i18next.on('languageChanged', updateTranslations);
 
 export const partnersLogos = [
-	{
-		logo: './logos/cgi.svg',
-		alt: 'CGI',
-	},
-	{
-		logo: './logos/engie.svg',
-		alt: 'Engie',
-	},
-	{
-		logo: './logos/erasmus.svg',
-		alt: 'Erasmus',
-	},
-	{
-		logo: './logos/facilicom.svg',
-		alt: 'Facilicom',
-	},
-	{
-		logo: './logos/port-rotterdam.svg',
-		alt: 'Port of Rotterdam',
-	},
-	{
-		logo: './logos/rotterdam-logo.svg',
-		alt: 'Rotterdam',
-	},
-	{
-		logo: './logos/svides.svg',
-		alt: 'Svides',
-	},
-	{
-		logo: './logos/tudelft.svg',
-		alt: 'TU Delft',
-	},
-	{
-		logo: './logos/vanOord.svg',
-		alt: 'Van Oord',
-	},
-	{
-		logo: './logos/vopak.svg',
-		alt: 'Vopak',
-	},
+	{ logo: './logos/cgi.svg', alt: 'CGI' },
+	{ logo: './logos/engie.svg', alt: 'Engie' },
+	{ logo: './logos/erasmus.svg', alt: 'Erasmus' },
+	{ logo: './logos/facilicom.svg', alt: 'Facilicom' },
+	{ logo: './logos/port-rotterdam.svg', alt: 'Port of Rotterdam' },
+	{ logo: './logos/rotterdam-logo.svg', alt: 'Rotterdam' },
+	{ logo: './logos/svides.svg', alt: 'Svides' },
+	{ logo: './logos/tudelft.svg', alt: 'TU Delft' },
+	{ logo: './logos/vanOord.svg', alt: 'Van Oord' },
+	{ logo: './logos/vopak.svg', alt: 'Vopak' },
 ];
 
 export const heroWords = ['Esnaj', 'Software'];
@@ -78,6 +60,8 @@ export const mainServices = [
 			name: 'home.services.main-services.full-stack-development.name',
 			description:
 				'home.services.main-services.full-stack-development.description',
+			longDescription:
+				'home.services.main-services.full-stack-development.long-description',
 		},
 		name: getTranslation(
 			'home.services.main-services.full-stack-development.name'
@@ -85,6 +69,31 @@ export const mainServices = [
 		description: getTranslation(
 			'home.services.main-services.full-stack-development.description'
 		),
+		longDescription: getTranslation(
+			'home.services.main-services.full-stack-development.long-description'
+		),
+		itemsExtra: [
+			{
+				id: 1,
+				translationKeys: {
+					text: 'home.services.main-services.full-stack-development.items-extra.Front-end',
+				},
+				name: 'Front-end',
+				text: getTranslation(
+					'home.services.main-services.full-stack-development.items-extra.Front-end'
+				),
+			},
+			{
+				id: 2,
+				translationKeys: {
+					text: 'home.services.main-services.full-stack-development.items-extra.Back-end',
+				},
+				name: 'Back-end',
+				text: getTranslation(
+					'home.services.main-services.full-stack-development.items-extra.Back-end'
+				),
+			},
+		],
 		link: 'full-stack-development',
 		icon: <DevelopmentIcon />,
 	},
@@ -93,10 +102,15 @@ export const mainServices = [
 		translationKeys: {
 			name: 'home.services.main-services.consulting.name',
 			description: 'home.services.main-services.consulting.description',
+			longDescription:
+				'home.services.main-services.consulting.long-description',
 		},
 		name: getTranslation('home.services.main-services.consulting.name'),
 		description: getTranslation(
 			'home.services.main-services.consulting.description'
+		),
+		longDescription: getTranslation(
+			'home.services.main-services.consulting.long-description'
 		),
 		link: 'consulting',
 		icon: <ConsultingIcon />,
@@ -106,10 +120,15 @@ export const mainServices = [
 		translationKeys: {
 			name: 'home.services.main-services.api-integration.name',
 			description: 'home.services.main-services.api-integration.description',
+			longDescription:
+				'home.services.main-services.api-integration.long-description',
 		},
 		name: getTranslation('home.services.main-services.api-integration.name'),
 		description: getTranslation(
 			'home.services.main-services.api-integration.description'
+		),
+		longDescription: getTranslation(
+			'home.services.main-services.api-integration.long-description'
 		),
 		link: 'api-integration',
 		icon: <IntegrationIcon />,

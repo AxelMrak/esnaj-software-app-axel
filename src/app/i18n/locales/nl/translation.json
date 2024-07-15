@@ -18,50 +18,58 @@
 		"hero": {
 			"description": "Esnaj Software is uw vertrouwde partner voor webontwikkeling in Delft. Wij zijn gespecialiseerd in het creëren van geavanceerde websites en applicaties die zakelijk succes stimuleren."
 		},
+
 		"services": {
 			"title": "Ons belangrijkste expertisegebied",
-			"description": "Deze gebieden hieronder zijn waar we geweldig in zijn",
-			"subtitle": "Softwareontwikkeling",
-			"text_1": "Met een team van TU Delft-afgestudeerden streven we ernaar softwareoplossingen van de hoogste kwaliteit te leveren.",
-			"text_2": "10 jaar ervaring in het maken van geweldige dingen.",
+			"description": "Deze onderstaande gebieden zijn waar we goed in zijn",
+			"subtitle": "Software Bouwen",
+			"text_1": "Met een team van TU Delft-afgestudeerden streven we ernaar softwareoplossingen van de hoogste normen te leveren.",
+			"text_2": "10 jaar ervaring in het creëren van geweldige dingen.",
 			"main-services": {
 				"full-stack-development": {
 					"name": "Full Stack Ontwikkeling",
-					"description": "Breng uw bedrijfsidee van begin tot eind tot leven met behulp van de nieuwste technologieën."
+					"description": "Breng uw zakelijke idee tot leven van begin tot eind met de nieuwste technologieën.",
+					"long-description": "Dit omvat het volledige pakket. Een hele applicatie, back-end en front-end.",
+					"items-extra": {
+						"Front-end": "Een visuele manier om met de applicatie te communiceren (website, desktop en mobiel)",
+						"Back-end": "De logica achter de applicatie. (Database, connectiviteit met de buitenwereld)"
+					}
 				},
 				"consulting": {
 					"name": "Consultancy",
-					"description": "We helpen u bij het aanpakken van de moeilijkste softwareproblemen die u kunt tegenkomen."
+					"description": "Wij helpen u bij het aanpakken van de moeilijkste softwareproblemen waarmee u te maken kunt krijgen.",
+					"long-description": "Naarmate technologie steeds meer aanwezig wordt in de samenleving en de technologische vooruitgang snel wordt geboekt. We zijn gespecialiseerd in het geven van technologische strategieën voor uw zakelijke uitdagingen en het bieden van de bijbehorende oplossingen. Oplossingen die wij bieden omvatten softwarearchitectuur bedrijfsapplicaties."
 				},
 				"api-integration": {
-					"name": "API-integratie",
-					"description": "We helpen uw softwareoplossingen efficiënt te laten communiceren en integreren."
+					"name": "API Integratie",
+					"description": "Wij helpen uw softwareoplossingen zo efficiënt mogelijk te communiceren en te integreren.",
+					"long-description": "U wilt misschien bestaande functionaliteiten van andere bedrijven aan uw applicatie toevoegen. Of u wilt een gateway bieden voor externe machines om verbinding te maken met uw database. Met behulp van API's is dit mogelijk. Op deze manier kunnen we bijvoorbeeld de Google Maps API in uw systeem implementeren, de Kamer van Koophandel. Of wellicht kunnen uw vele machines met elkaar praten via het netwerk."
 				}
 			},
 			"other-services": {
 				"backend": {
 					"name": "Backend App Ontwikkeling",
-					"description": "We coderen een integreerbare, uitbreidbare en modulaire backend die vloeiend met uw app integreert."
+					"description": "We coderen een integreerbare, uitbreidbare en modulaire back-end die soepel met uw app integreert."
 				},
 				"hosting": {
 					"name": "Hosting",
-					"description": "We helpen bij het beheren van alle rompslomp die komt kijken bij het plaatsen van uw website op het web."
+					"description": "Wij helpen u met het beheren van alle rompslomp die komt kijken bij het plaatsen van uw website op het web."
 				},
 				"frontend": {
 					"name": "Frontend App Ontwikkeling",
-					"description": "We creëren apps voor u die voldoen aan moderne UI/UX-standaarden met een samenhangende flow."
+					"description": "Wij creëren apps voor u die voldoen aan moderne UI/UX-standaarden met een samenhangende flow."
 				},
 				"database": {
 					"name": "Database Migraties",
-					"description": "Het omgaan met gigabytes aan gevoelige data kan lastig zijn. We helpen u bij het beheren van al deze data."
+					"description": "Het omgaan met gigabytes aan gevoelige gegevens kan lastig zijn. Wij helpen u bij het beheren van al deze gegevens."
 				},
 				"mobile": {
-					"name": "Mobiele App Ontwikkeling",
-					"description": "We creëren apps voor u die cross-platform zijn, waardoor uw bedrijf veel meer mensen kan bereiken."
+					"name": "Mobile App Ontwikkeling",
+					"description": "Wij creëren apps voor u die cross-platform zijn, wat betekent dat uw bedrijf veel meer mensen kan bereiken."
 				},
 				"design": {
 					"name": "UI/UX Ontwerp",
-					"description": "We ontwerpen gemakkelijk te volgen en mooie gebruikersstromen zodat uw klanten de beste gebruikerservaring hebben."
+					"description": "Wij ontwerpen gebruiksvriendelijke en mooie gebruikersstromen zodat uw klanten de beste gebruikerservaring hebben."
 				}
 			}
 		},

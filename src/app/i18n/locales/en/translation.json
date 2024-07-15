@@ -41,6 +41,9 @@
 			"title": "Contact us",
 			"description": "We are always ready to help you with your project. Contact us now and let's get started.",
 			"button": "Send us a message"
+		},
+		"misc": {
+			"nl": "Delft, Netherlands"
 		}
 	}
 }

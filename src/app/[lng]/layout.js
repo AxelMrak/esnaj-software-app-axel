@@ -8,6 +8,7 @@ import { LanguageSwitcher } from './components/globals/LanguageSwitcher';
 import Header from './components/globals/Header';
 import { BreakpointsProvider } from '@/context/BreakpointsContext';
 import { Suspense } from 'react';
+import Footer from './components/globals/Footer';
 
 const ClashGrotesk = localFont({
 	src: '../../fonts/ClashGrotesk-Variable.woff2',
@@ -39,6 +40,7 @@ export default function RootLayout({ children, params: { lng } }) {
 					<Header lng={lng} />
 					{children}
 					<LanguageSwitcher lng={lng} />
+					<Footer lng={lng} />
 				</BreakpointsProvider>
 				</Suspense>
 			</body>

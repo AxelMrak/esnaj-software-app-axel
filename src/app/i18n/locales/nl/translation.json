@@ -36,6 +36,9 @@
 			"title": "Contact ons",
 			"description": "We staan altijd klaar om u te helpen met uw project. Neem nu contact met ons op en laten we beginnen.",
 			"button": "Stuur ons een bericht"
+		},
+		"misc": {
+			"nl": "Delft, Nederland"
 		}
 	}
 }

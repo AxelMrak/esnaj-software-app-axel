@@ -169,6 +169,11 @@
 	"about": {
 		"title": "Over ons",
 		"text": "Esnaj Software is een groep ambitieuze software-engineers. Met vele jaren ervaring hebben ze besloten hun eigen bureau op te richten om softwareoplossingen voor bedrijven te bieden. Wij zijn een team van jonge en ambitieuze software-engineers die gepassioneerd zijn over het creëren van softwareoplossingen die bedrijven helpen groeien. We zijn gevestigd in Delft, Nederland.",
-		"team": "Ons team"
+		"team": "Ons team",
+		"software-eng": "Software Ingenieur",
+		"software-eng-consultant": "Software Ingenieur Consultant",
+		"designer": "UI/UX Ontwerper",
+		"backend": "Backend Ingenieur",
+		"frontend": "Frontend Ingenieur"
 	}
 }

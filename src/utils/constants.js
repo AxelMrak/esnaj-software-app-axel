@@ -44,8 +44,14 @@ const updateTranslations = () => {
 		});
 	};
 
-	updateProjectTranslations(projects);
+	const updateTeamTranslations = (team) => {
+		team.forEach((member) => {
+			member.role = getTranslation(member.translationKeys.role);
+		});
+	}
 
+	updateProjectTranslations(projects);
+	updateTeamTranslations(team);
 	updateServiceTranslations(mainServices);
 	updateServiceTranslations(otherServices);
 };
@@ -504,4 +510,55 @@ export const projects = [
 		link: 'ijsbier-steenwijk',
 		image: '/images/projects/ijsbier-image.webp',
 	},
+];
+
+export const team = [
+	{
+		translationKeys: {
+			role: 'about.software-eng',
+		},
+		name: 'Richard Luidens',
+		role: getTranslation('about.software-eng'),
+		image: '/images/team/richard.webp',
+	},
+	{
+		translationKeys: {
+			role: 'about.software-eng-consultant',
+		},
+		name: 'Henky Janse',
+		role: getTranslation('about.software-eng-consultant'),
+		image: '/images/team/henky.webp',
+	},
+	{
+		translationKeys: {
+			role: 'about.software-eng',
+		},
+		name: 'Ruben Cöp',
+		role: getTranslation('about.software-eng'),
+		image: '/images/team/ruben.webp',
+	},
+	{
+		translationKeys: {
+			role: 'about.designer',
+		},
+		name: 'Lucas Sweerts',
+		role: getTranslation('about.designer'),
+		image: '/images/team/lucas.webp',
+	},
+	{
+		translationKeys: {
+			role: 'about.backend',
+		},
+		name: 'Ka Fui Yang',
+		role: getTranslation('about.backend'),
+		image: '/images/team/ka-fui.webp',
+	},
+	{
+		translationKeys: {
+			role: 'about.frontend',
+		},
+		name: 'Axel Mrak',
+		role: getTranslation('about.frontend'),
+		image: '/images/team/axel.webp',
+	}
 ];

@@ -29,7 +29,7 @@ function About({ lng }) {
 				<p className="text-3xl font-light">{t('about.text')}</p>
 				<div className="w-full flex flex-col items-start gap-8">
 					<p className="text-4xl font-normal">{t('about.team')}</p>
-					<div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-12">
+					<div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-4">
 						{team.map((member) => (
 							<div key={member.id} className="w-full flex flex-col items-center justify-center gap-4 border border-gray-200 shadow-sm rounded-sm py-6">
 								<Image
@@ -37,7 +37,7 @@ function About({ lng }) {
 									alt={member.name}
 									width={200}
 									height={200}
-									className="rounded-full border border-gray-300"
+									className="rounded-full border border-gray-100"
 								/>
 								<h2 className="text-2xl font-normal text-center underline decoration-gray-light">
 									{member.name}

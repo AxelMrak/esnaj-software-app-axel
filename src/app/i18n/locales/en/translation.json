@@ -24,8 +24,9 @@
 			"subtitle": "Software Building",
 			"text_1": "Having a team of TU Delft graduates, we strive to deliver software solutions of the highest standards.",
 			"text_2": "10 years of experience on creating amazing stuff.",
-			"main-services": {
-				"full-stack-development": {
+			"main-services": [
+				{
+					"slug": "full-stack-development",
 					"name": "Full Stack Development",
 					"description": "Get your business idea to life from start to finish using the latest technologies.",
 					"long-description": "This includes the full package. A whole application, back end and front end.",
@@ -34,43 +35,51 @@
 						"Back-end": "The logic behind the application. (Database, connectivity to outside world)"
 					}
 				},
-				"consulting": {
+				{
+					"slug": "consulting",
 					"name": "Consulting",
 					"description": "We will aid you in the process of tackling the hardest software problems you can face.",
 					"long-description": "As technology is becoming more prevalent in society and technological progress is being rapidly made. We specialize in giving technological strategies to your business challenges and providing their respective solutions. Solutions that we provide include software architecture business applications."
 				},
-				"api-integration": {
+				{
+					"slug": "api-integration",
 					"name": "API Integration",
 					"description": "We help make your software solutions communicate and integrate in the most efficient way possible.",
 					"long-description": "You might want to add existing functionalities from other companies to your application. Or you might want to provide a gateway for external machines to connect to your database. Using API's this is possible. In this way we could for example implement the google maps API in your system, the Chamber of Commerce. Or perhaps have your many machines be able to talk to eachother through the network."
 				}
-			},
-			"other-services": {
-				"backend": {
+			],
+			"other-services": [
+				{
+					"slug": "backend-app-development",
 					"name": "Backend App Development",
 					"description": "We code an integratable, extendable and modular back end that will fluently integrate with your app."
 				},
-				"hosting": {
+				{
+					"slug": "hosting",
 					"name": "Hosting",
 					"description": "We help manage all the hassles that comes with putting your website on the web."
 				},
-				"frontend": {
+				{
+					"slug": "frontend-app-development",
 					"name": "Frontend App Development",
 					"description": "We create apps for you that follow modern UI/UX standards with a coherent flow."
 				},
-				"database": {
+				{
+					"slug": "database-migrations",
 					"name": "Database Migrations",
 					"description": "Dealing with gigabytes of sensitive data can be tricky. We help you with managing all this data."
 				},
-				"mobile": {
+				{
+					"slug": "mobile-app-development",
 					"name": "Mobile App Development",
 					"description": "We create apps for you that are cross-platform, meaning your business will be able to reach out many more people."
 				},
-				"design": {
+				{
+					"slug": "ui-ux-design",
 					"name": "UI/UX Design",
 					"description": "We design easy-to-follow and beautiful user flows so that your customers have the best user experience."
 				}
-			}
+			]
 		},
 		"projects": {
 			"title": "Our projects",
@@ -78,8 +87,10 @@
 			"button-view-all": "View all",
 			"button-view-less": "View less",
 			"know-more": "Know more",
-			"main-projects": {
-				"career-portal-aruba": {
+			"main-projects": [
+				{
+					"slug": "career-portal-aruba",
+					"image": "/images/projects/cpa-img.webp",
 					"title": "Career Portal Aruba",
 					"description": "A platform that connects job seekers with employers in Aruba.",
 					"what-we-did": [
@@ -98,7 +109,9 @@
 						"JavaScript"
 					]
 				},
-				"pfister-weighbridge": {
+				{
+					"slug": "pfister",
+					"image": "/images/projects/pfister-image.webp",
 					"title": "Pfister Weighbridge",
 					"description": "Pfister Weighing Technology B.V. is the largest supplier of weighbridges in the Benelux with standard dimensions up to 20 x 3 m and up to 100,000 kg weighing capacity. Pfister needed help integrating their system with their customers in an automated process.",
 					"what-we-did": [
@@ -108,19 +121,25 @@
 					],
 					"technologies": ["Odoo 14", "Python"]
 				},
-				"rocketx": {
+				{
+					"slug": "rocketx",
+					"image": "/images/projects/rocketX-image.webp",
 					"title": "RocketX",
 					"description": "RocketX Accelerate Scale-ups by providing access to the best talent, smart capital and new revenue. RocketX is a platform that connects scale-ups with investors, talent, and customers.",
 					"what-we-did": ["Consulting", "API Connection"],
 					"technologies": ["Python", "Odoo", "Hubspot"]
 				},
-				"haven-van-rotterdam": {
+				{
+					"slug": "haven-van-rotterdam",
+					"image": "/images/projects/haven-image.webp",
 					"title": "Port of Rotterdam",
 					"description": "The port of Rotterdam is the largest port and industrial complex in Europe with a total cargo throughput of 470 million tons in 2019. The port authority needed a vacancy platform for it and companies within the network.",
 					"what-we-did": ["API Integration", "Built a web application"],
 					"technologies": ["Python", "Django", "Elastic Search", "MongoDB"]
 				},
-				"briqwise": {
+				{
+					"slug": "briqwise",
+					"image": "/images/projects/briqwise-image.webp",
 					"title": "Briqwise",
 					"description": "Briqwise is a platform that connects investors with real estate projects. The platform is designed to help investors find the right project and help project owners find the right investor.",
 					"what-we-did": [
@@ -139,7 +158,9 @@
 						"JavaScript"
 					]
 				},
-				"ijsbier-steenwijk": {
+				{
+					"slug": "ijsbier",
+					"image": "/images/projects/IJsbier-image.webp",
 					"title": "IJsbier Steenwijk",
 					"description": "IceBear collects waste wood from the Steenwijk area for the production of circular pallet blocks. The waste wood is further reduced in size and cleaned, whereby parts such as metal, plastic and sand are separated. The cleaned wood is dried by the biomass boiler. For this we use the residual heat after the supply of green electricity to the grid and hot water for weed control. With six different presses, the dried wood is processed into pallet blocks with a variety of molds.",
 					"what-we-did": [
@@ -149,7 +170,7 @@
 					],
 					"technologies": ["Python", "Odoo 14.0"]
 				}
-			}
+			]
 		},
 		"contact": {
 			"title": "Contact us",
@@ -160,7 +181,7 @@
 			"nl": "Delft, Netherlands"
 		}
 	},
-	"project":{
+	"project": {
 		"what-we-did": "What we did",
 		"technologies": "Technologies"
 	},

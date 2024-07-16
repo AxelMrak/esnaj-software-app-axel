@@ -7,7 +7,7 @@ import React from 'react';
 function ProjectMain({ lng, slug }) {
 	const { t } = useTranslation(lng);
 
-	const project = projects.find((project) => project.link === slug);
+	const project = t('home.projects.main-projects').find((project) => project.slug === slug);
 
 	return (
 		<main className="w-full h-full flex flex-col items-center justify-between">
@@ -33,7 +33,7 @@ function ProjectMain({ lng, slug }) {
                         {t('project.what-we-did')}
                     </span>
 					<ul className="list-disc list-inside mt-2">
-						{project.whatWeDid.map((item) => (
+						{project['what-we-did'].map((item) => (
 							<li key={item.id} className="text-lg font-light">
 								{item}
 							</li>

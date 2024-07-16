@@ -25,8 +25,9 @@
 			"subtitle": "Software Bouwen",
 			"text_1": "Met een team van TU Delft-afgestudeerden streven we ernaar softwareoplossingen van de hoogste normen te leveren.",
 			"text_2": "10 jaar ervaring in het creëren van geweldige dingen.",
-			"main-services": {
-				"full-stack-development": {
+			"main-services": [
+				{
+					"slug": "full-stack-development",
 					"name": "Full Stack Ontwikkeling",
 					"description": "Breng uw zakelijke idee tot leven van begin tot eind met de nieuwste technologieën.",
 					"long-description": "Dit omvat het volledige pakket. Een hele applicatie, back-end en front-end.",
@@ -35,43 +36,51 @@
 						"Back-end": "De logica achter de applicatie. (Database, connectiviteit met de buitenwereld)"
 					}
 				},
-				"consulting": {
+				{
+					"slug": "consulting",
 					"name": "Consultancy",
 					"description": "Wij helpen u bij het aanpakken van de moeilijkste softwareproblemen waarmee u te maken kunt krijgen.",
 					"long-description": "Naarmate technologie steeds meer aanwezig wordt in de samenleving en de technologische vooruitgang snel wordt geboekt. We zijn gespecialiseerd in het geven van technologische strategieën voor uw zakelijke uitdagingen en het bieden van de bijbehorende oplossingen. Oplossingen die wij bieden omvatten softwarearchitectuur bedrijfsapplicaties."
 				},
-				"api-integration": {
+				{
+					"slug": "api-integration",
 					"name": "API Integratie",
 					"description": "Wij helpen uw softwareoplossingen zo efficiënt mogelijk te communiceren en te integreren.",
 					"long-description": "U wilt misschien bestaande functionaliteiten van andere bedrijven aan uw applicatie toevoegen. Of u wilt een gateway bieden voor externe machines om verbinding te maken met uw database. Met behulp van API's is dit mogelijk. Op deze manier kunnen we bijvoorbeeld de Google Maps API in uw systeem implementeren, de Kamer van Koophandel. Of wellicht kunnen uw vele machines met elkaar praten via het netwerk."
 				}
-			},
-			"other-services": {
-				"backend": {
+			],
+			"other-services": [
+				{
+					"slug": "backend-app-development",
 					"name": "Backend App Ontwikkeling",
 					"description": "We coderen een integreerbare, uitbreidbare en modulaire back-end die soepel met uw app integreert."
 				},
-				"hosting": {
+				{
+					"slug": "hosting",
 					"name": "Hosting",
 					"description": "Wij helpen u met het beheren van alle rompslomp die komt kijken bij het plaatsen van uw website op het web."
 				},
-				"frontend": {
+				{
+					"slug": "frontend-app-development",
 					"name": "Frontend App Ontwikkeling",
 					"description": "Wij creëren apps voor u die voldoen aan moderne UI/UX-standaarden met een samenhangende flow."
 				},
-				"database": {
+				{
+					"slug": "database-migrations",
 					"name": "Database Migraties",
 					"description": "Het omgaan met gigabytes aan gevoelige gegevens kan lastig zijn. Wij helpen u bij het beheren van al deze gegevens."
 				},
-				"mobile": {
+				{
+					"slug": "mobile-app-development",
 					"name": "Mobile App Ontwikkeling",
 					"description": "Wij creëren apps voor u die cross-platform zijn, wat betekent dat uw bedrijf veel meer mensen kan bereiken."
 				},
-				"design": {
+				{
+					"slug": "ui-ux-design",
 					"name": "UI/UX Ontwerp",
 					"description": "Wij ontwerpen gebruiksvriendelijke en mooie gebruikersstromen zodat uw klanten de beste gebruikerservaring hebben."
 				}
-			}
+			]
 		},
 		"projects": {
 			"title": "Onze projecten",
@@ -79,8 +88,10 @@
 			"button-view-all": "Bekijk alles",
 			"button-view-less": "Bekijk minder",
 			"know-more": "Meer weten",
-			"main-projects": {
-				"career-portal-aruba": {
+			"main-projects": [
+				{
+					"slug": "career-portal-aruba",
+					"image": "/images/projects/cpa-img.webp",
 					"title": "Career Portal Aruba",
 					"description": "Career Portal Aruba is een platform dat werkzoekenden verbindt met werkgevers in Aruba. Het platform is ontworpen om werkzoekenden te helpen de juiste baan te vinden en werkgevers om de juiste kandidaat te vinden.",
 					"what-we-did": [
@@ -99,7 +110,9 @@
 						"JavaScript"
 					]
 				},
-				"pfister-weighbridge": {
+				{
+					"slug": "pfister",
+					"image": "/images/projects/pfister-image.webp",
 					"title": "Pfister Weegbrug",
 					"description": "Pfister Weighing Technology B.V. is de grootste leverancier van weegbruggen in de Benelux met standaardafmetingen tot 20 x 3 m en een weegcapaciteit tot 100.000 kg. Pfister had hulp nodig bij het integreren van hun systeem met hun klanten in een geautomatiseerd proces.",
 					"what-we-did": [
@@ -109,19 +122,25 @@
 					],
 					"technologies": ["Odoo 14", "Python"]
 				},
-				"rocketx": {
+				{
+					"slug": "rocketx",
+					"image": "/images/projects/rocketX-image.webp",
 					"title": "RocketX",
 					"description": "RocketX versnelt scale-ups door toegang te bieden tot het beste talent, slim kapitaal en nieuwe inkomsten. RocketX is een platform dat scale-ups verbindt met investeerders, talent en klanten.",
 					"what-we-did": ["Consultancy", "API Koppeling"],
 					"technologies": ["Python", "Odoo", "Hubspot"]
 				},
-				"haven-van-rotterdam": {
+				{
+					"slug": "haven-van-rotterdam",
+					"image": "/images/projects/haven-image.webp",
 					"title": "Haven van Rotterdam",
 					"description": "De haven van Rotterdam is de grootste haven en het grootste industriële complex van Europa met een totale goederenoverslag van 470 miljoen ton in 2019. De havenautoriteit had een vacatureplatform nodig voor zichzelf en bedrijven binnen het netwerk.",
 					"what-we-did": ["API Integratie", "Webapplicatie gebouwd"],
 					"technologies": ["Python", "Django", "Elastic Search", "MongoDB"]
 				},
-				"briqwise": {
+				{
+					"slug": "briqwise",
+					"image": "/images/projects/briqwise-image.webp",
 					"title": "Briqwise",
 					"description": "Briqwise is een platform dat investeerders verbindt met vastgoedprojecten. Het platform is ontworpen om investeerders te helpen het juiste project te vinden en projecteigenaren om de juiste investeerder te vinden.",
 					"what-we-did": [
@@ -140,7 +159,9 @@
 						"JavaScript"
 					]
 				},
-				"ijsbier-steenwijk": {
+				{
+					"slug": "ijsbier",
+					"image": "/images/projects/IJsbier-image.webp",
 					"title": "IJsbier Steenwijk",
 					"description": "IceBear verzamelt afvalhout uit de omgeving van Steenwijk voor de productie van circulaire palletblokken. Het afvalhout wordt verder verkleind en gereinigd, waarbij onderdelen zoals metaal, plastic en zand worden gescheiden. Het gereinigde hout wordt gedroogd door de biomassaketel. Hiervoor gebruiken we de restwarmte na de levering van groene elektriciteit aan het net en warm water voor onkruidbestrijding. Met zes verschillende persen wordt het gedroogde hout verwerkt tot palletblokken met verschillende vormen.",
 					"what-we-did": [
@@ -150,8 +171,7 @@
 					],
 					"technologies": ["Python", "Odoo 14.0"]
 				}
-			}
-			
+			]
 		},
 		"contact": {
 			"title": "Contact ons",

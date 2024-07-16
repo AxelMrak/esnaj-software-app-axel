@@ -6,12 +6,10 @@ import { projects } from '@/utils/constants';
 import Image from 'next/image';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { ArrowIcon } from '../globals/Icons/UI';
-import SwiperCore, { Navigation } from 'swiper';
 import 'swiper/swiper-bundle.css';
 import Link from 'next/link';
 import { useBreakpoints } from '@/context/BreakpointsContext';
 
-SwiperCore.use([Navigation]);
 
 function Projects({ lng }) {
 	const { isMobile, isTablet, isDesktop } = useBreakpoints();
@@ -69,7 +67,9 @@ function Projects({ lng }) {
 			</div>
 			{viewAll ? (
 				<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full">
-					{projects.map((project, index) => (
+					{
+						t('home.projects.main-projects') &&
+						t('home.projects.main-projects').map((project, index) => (
 							
 						<div key={index} className="flex flex-col items-start gap-4">
 			
@@ -85,7 +85,7 @@ function Projects({ lng }) {
 							<div className="w-full flex flex-col items-start gap-2 mt-6">
 								<h3 className="text-2xl font-normal">{project.title}</h3>
 								<Link
-									href={`/${lng}/projects/${project.link}`}
+									href={`/${lng}/projects/${project.slug}`}
 									className="underline text-xl font-light decoration-accent"
 								>
 									{t('home.projects.know-more')}
@@ -108,7 +108,9 @@ function Projects({ lng }) {
 					slidesPerView={getSlidesPerView()}
 					draggable={true}
 				>
-					{projects.map((project, index) => (
+					{
+						t('home.projects.main-projects') &&
+						t('home.projects.main-projects').map((project, index) => (
 						<SwiperSlide key={index}>
 							<div className="relative h-60 w-full rounded-sm">
 								<Image
@@ -122,7 +124,7 @@ function Projects({ lng }) {
 							<div className="w-full flex flex-col items-start gap-2 mt-6">
 								<h3 className="text-2xl font-normal">{project.title}</h3>
 								<Link
-									href={`/${lng}/projects/${project.link}`}
+									href={`/${lng}/projects/${project.slug}`}
 									className="underline text-xl font-light decoration-accent"
 								>
 									{t('home.projects.know-more')}

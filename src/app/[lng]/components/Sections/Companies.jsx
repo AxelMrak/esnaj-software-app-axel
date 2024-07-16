@@ -1,4 +1,5 @@
 'use client';
+
 import { partnersLogos } from '@/utils/constants';
 import Image from 'next/image';
 import React from 'react';
@@ -18,9 +19,9 @@ function Companies() {
 	};
 
 	return (
-		<section className="w-full h-32 my-16 px-8">
+		<section className="w-full h-32 px-8">
 			<Swiper
-				modules={[ A11y, Autoplay]}
+				modules={[A11y, Autoplay]}
 				spaceBetween={40}
 				slidesPerView={getSlidesPerView()}
 				loop={true}

@@ -7,6 +7,16 @@ import Companies from './components/Sections/Companies';
 import Services from './components/Sections/Services';
 import Projects from './components/Sections/Projects';
 import Contact from './components/Sections/Contact';
+import { METADATA } from '@/utils/constants';
+
+export async function generateMetadata({ params: { lng } }) {
+	if (languages.indexOf(lng) < 0) lng = fallbackLng;
+	return {
+		title: METADATA[`home_${lng}`].title,
+		description: METADATA[`home_${lng}`].description,
+		keywords: METADATA[`home_${lng}`].keywords
+	};
+}
 
 export default async function Page({ params: { lng } }) {
 	const { t } = await useTranslation(lng);

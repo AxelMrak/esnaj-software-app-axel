@@ -33,8 +33,11 @@ export async function generateStaticParams() {
 
 export default function RootLayout({ children, params: { lng } }) {
 	return (
-		<html lang={lng} dir={dir(lng)} className={ClashGrotesk.className}>
-			<head />
+		<html lang={lng} className={ClashGrotesk.className}>
+			<head>
+				<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+				<link rel="icon" type="image/png" href="/favicon.png" />
+			</head>
 			<body>
 				<BreakpointsProvider>
 					<Header lng={lng} />

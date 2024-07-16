@@ -19,7 +19,7 @@ function ProjectMain({ lng, slug }) {
                     <div className="absolute top-0 left-0 w-full h-full bg-black opacity-80 z-10"></div>
 					<Image
 						src={project.image}
-						alt={project.name}
+						alt={project.name || project.title}
 						layout="fill"
 						objectFit="cover"
 						className="grayscale"

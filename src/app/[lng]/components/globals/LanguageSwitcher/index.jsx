@@ -5,6 +5,7 @@ import { languages } from '../../../i18n/settings';
 import { useTranslation } from '../../../i18n/client';
 import { NetherlandsFlag, UKFlag } from './Icons/Flags';
 import React, { useState } from 'react';
+import { Trans } from 'react-i18next';
 
 const flags = {
 	en: <UKFlag />,
@@ -21,15 +22,17 @@ export const LanguageSwitcher = ({ lng }) => {
 
 	return (
 		<div className="fixed bottom-4 right-4 w-max h-max flex flex-col gap-2 z-50">
-			<button
+			<Trans
 				onClick={toggleDropdown}
+				i18nKey="languageSwitcher"
+                t={t}
 				className="flex items-center gap-2 p-2 bg-white border border-gray-300 rounded-sm shadow-sm"
 			>
 				{React.cloneElement(flags[lng], {
 					className: 'w-6 h-6',
 				})}
 				<span>{t(`languageSwitcher.options.${lng}`)}</span>
-			</button>
+			</Trans>
 			<div
 				className={`${
 					isOpen
@@ -37,8 +40,7 @@ export const LanguageSwitcher = ({ lng }) => {
 						: 'opacity-0 text-transparent h-0'
 				} transition-all duration-300 ease-in-out overflow-hidden flex items-center gap-2 p-2 bg-white border border-gray-300 rounded-sm`}
 			>
-				{
-					languages?.length &&
+				{languages?.length &&
 					languages
 						.filter((lang) => lang !== lng)
 						.map((lang) => (

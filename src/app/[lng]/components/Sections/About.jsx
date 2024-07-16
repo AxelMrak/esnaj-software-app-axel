@@ -30,7 +30,9 @@ function About({ lng }) {
 				<div className="w-full flex flex-col items-start gap-8">
 					<p className="text-4xl font-normal">{t('about.team')}</p>
 					<div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center justify-center gap-4">
-						{team.map((member) => (
+						{
+							t("about.team-members") &&
+							t("about.team-members").map((member) => (
 							<div key={member.id} className="w-full flex flex-col items-center justify-center gap-4 border border-gray-200 shadow-sm rounded-sm py-6">
 								<Image
 									src={member.image}

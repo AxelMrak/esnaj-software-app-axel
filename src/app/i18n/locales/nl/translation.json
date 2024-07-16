@@ -179,7 +179,8 @@
 			"button": "Stuur ons een bericht"
 		},
 		"misc": {
-			"nl": "Delft, Nederland"
+			"nl": "Delft, Nederland",
+			"loading": "Laden..."
 		}
 	},
 	"project": {
@@ -190,10 +191,38 @@
 		"title": "Over ons",
 		"text": "Esnaj Software is een groep ambitieuze software-engineers. Met vele jaren ervaring hebben ze besloten hun eigen bureau op te richten om softwareoplossingen voor bedrijven te bieden. Wij zijn een team van jonge en ambitieuze software-engineers die gepassioneerd zijn over het creëren van softwareoplossingen die bedrijven helpen groeien. We zijn gevestigd in Delft, Nederland.",
 		"team": "Ons team",
-		"software-eng": "Software Ingenieur",
-		"software-eng-consultant": "Software Ingenieur Consultant",
-		"designer": "UI/UX Ontwerper",
-		"backend": "Backend Ingenieur",
-		"frontend": "Frontend Ingenieur"
+		"team-members": [
+			{
+				"name": "Richard Luidens",
+				"role": "Software Ingenieur",
+				"image": "/images/team/richard.webp"
+			},
+			{
+				"name": "Henky Janse",
+				"role": "Software Ingenieur Consultant",
+				"image": "/images/team/henky.webp"
+			},
+			{
+				"name": "Ruben Cöp",
+				"role": "Software Ingenieur",
+				"image": "/images/team/ruben.webp"
+			},
+			{
+				"name": "Lucas Sweerts",
+				"role": "UI/UX Ontwerper",
+				"image": "/images/team/lucas.webp"
+			},
+			{
+				"name": "Ka Fui Yang",
+				"role": "Backend Ingenieur",
+				"image": "/images/team/ka-fui.webp"
+			},
+			{
+				"name": "Axel Mrak",
+				"role": "Frontend Ingenieur",
+				"image": "/images/team/axel.webp"
+			}
+		]
+
 	}
 }

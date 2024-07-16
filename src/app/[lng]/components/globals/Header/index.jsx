@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React, { useEffect } from 'react';
 import { Logo } from '../Icons/Logo';
 import Nav from './Nav';
@@ -15,13 +15,21 @@ function Header({ lng }) {
 
 	const handleClickLinkMobile = () => {
 		setIsMenuOpen(false);
-	}
+	};
 
 	return (
 		<header className="max-w-full sticky top-0 left-0 flex flex-row items-center justify-between p-6 bg-white z-50">
-			<Logo width={70} height={70} />
+			<Link href={`/${lng}`}>
+				<Logo width={70} height={70} />
+			</Link>
 			<Nav lng={lng} />
-			<MobileNav isOpen={isMenuOpen} close={handleClickLinkMobile} routes={routes} lng={lng} t={t} />
+			<MobileNav
+				isOpen={isMenuOpen}
+				close={handleClickLinkMobile}
+				routes={routes}
+				lng={lng}
+				t={t}
+			/>
 			<div className="flex flex-row items-center gap-4">
 				<Link
 					href={`/${lng}/${routes[routes.length - 1].name}`}

@@ -9,6 +9,7 @@ import Header from './components/globals/Header';
 import { BreakpointsProvider } from '@/context/BreakpointsContext';
 import { Suspense } from 'react';
 import Footer from './components/globals/Footer';
+import Loader from './components/globals/Loader';
 
 const ClashGrotesk = localFont({
 	src: '../../fonts/ClashGrotesk-Variable.woff2',
@@ -35,14 +36,12 @@ export default function RootLayout({ children, params: { lng } }) {
 		<html lang={lng} dir={dir(lng)} className={ClashGrotesk.className}>
 			<head />
 			<body>
-				<Suspense fallback="Loading...">
-					<BreakpointsProvider>
-						<Header lng={lng} />
-						{children}
-						<LanguageSwitcher lng={lng} />
-						<Footer lng={lng} />
-					</BreakpointsProvider>
-				</Suspense>
+				<BreakpointsProvider>
+					<Header lng={lng} />
+					<Suspense fallback={<Loader lng={lng} />}>{children}</Suspense>
+					<LanguageSwitcher lng={lng} />
+					<Footer lng={lng} />
+				</BreakpointsProvider>
 			</body>
 		</html>
 	);

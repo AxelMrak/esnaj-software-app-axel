@@ -12,13 +12,14 @@ export default async function Page({ params: { lng } }) {
 	const { t } = await useTranslation(lng);
 
 	return (
-		<main className="w-full flex flex-col 2xl:mx-auto">
+		<main className="w-full 2xl:mx-auto">
 			<HeroHome lng={lng} />
-			<Companies />
-			<Services lng={lng} />
-			<Projects lng={lng} />
-
-			<Contact lng={lng} />
+			<div className="w-full flex flex-col gap-12 px-6 2xl:mx-auto">
+				<Companies />
+				<Services lng={lng} />
+				<Projects lng={lng} />
+				<Contact lng={lng} />
+			</div>
 		</main>
 	);
 }

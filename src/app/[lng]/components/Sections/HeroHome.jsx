@@ -5,7 +5,7 @@ import React from 'react';
 async function HeroHome({ lng }) {
 	const { t } = await useTranslation(lng);
 	return (
-		<section className="w-full h-screen md:h-[85vh] flex flex-col md:flex-row md:gap-12 items-center justify-between">
+		<section className="w-full h-screen md:h-[85vh] flex flex-col md:flex-row md:gap-12 items-center justify-between relative">
 			<article className="w-full md:w-1/2 font-light h-full flex flex-col items-start justify-center gap-6 pl-6 md:pl-20">
 				<span className="block transition-opacity duration-500 transform text-7xl font-light relative overflow-hidden">
 					Esnaj Software
@@ -17,10 +17,15 @@ async function HeroHome({ lng }) {
 					</h1>
 				</div>
 			</article>
-			<article
-				className="w-full md:w-3/4 h-full bg-center bg-contain sm:bg-cover md:bg-contain bg-no-repeat grayscale"
-				style={{ backgroundImage: 'url(/images/hero-image.webp)' }}
-			/>
+			<article className="w-full md:w-1/2 h-full flex items-center justify-center relative">
+				<Image
+					src="/images/hero-image.webp"
+					alt="Hero Home"
+					layout='fill'
+					objectFit='contain'
+					className='grayscale'
+				/>
+			</article>
 		</section>
 	);
 }

@@ -19,11 +19,12 @@ async function HeroHome({ lng }) {
 			</article>
 			<article className="w-full md:w-1/2 h-full flex items-center justify-center relative">
 				<Image
+					priority
 					src="/images/hero-image.webp"
 					alt="Hero Home"
-					layout='fill'
-					objectFit='contain'
-					className='grayscale'
+					layout="fill"
+					objectFit="contain"
+					className="grayscale"
 				/>
 			</article>
 		</section>

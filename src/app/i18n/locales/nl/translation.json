@@ -224,5 +224,11 @@
 			}
 		]
 
+	},
+	"other": {
+		"404": {
+			"title": "Pagina niet gevonden",
+			"description": "De pagina die u zoekt bestaat niet. Probeer een andere pagina te vinden."
+		}
 	}
 }

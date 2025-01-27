@@ -16,7 +16,7 @@ i18next
   .use(resourcesToBackend((language, namespace) => import(`./locales/${language}/${namespace}.json`)))
   .init({
     ...getOptions(),
-    lng: undefined, 
+    lng: "en", 
     detection: {
       order: ['path', 'htmlTag', 'cookie', 'navigator'],
     },

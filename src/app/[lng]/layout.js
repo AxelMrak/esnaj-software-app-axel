@@ -42,7 +42,7 @@ export default function RootLayout({ children, params: { lng } }) {
 				<BreakpointsProvider>
 					<Header lng={lng} />
 					<Suspense fallback={<Loader lng={lng} />}>{children}</Suspense>
-					<LanguageSwitcher lng={lng} />
+					<LanguageSwitcher lng={lng || "en"} />
 					<Footer lng={lng} />
 				</BreakpointsProvider>
 			</body>

@@ -223,6 +223,12 @@
 			}
 		]
 
+	},
+	"other": {
+		"404": {
+			"title": "404",
+			"description": "Page not found"
+		}
 	}
 }
 

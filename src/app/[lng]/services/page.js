@@ -1,7 +1,7 @@
 import React from 'react';
 import Services from '../components/Sections/Services';
 import { useTranslation } from '@/app/i18n';
-import { languages } from '@/app/i18n/settings';
+import { fallbackLng, languages } from '@/app/i18n/settings';
 import { METADATA } from '@/utils/constants';
 
 export async function generateMetadata({ params: { lng } }) {

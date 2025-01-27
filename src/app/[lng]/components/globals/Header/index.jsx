@@ -19,7 +19,9 @@ function Header({ lng }) {
 
 	return (
 		<header className="max-w-full sticky top-0 left-0 flex flex-row items-center justify-between p-6 bg-white z-50">
-			<Link href={`/${lng}`} 
+			<Link href={`/${lng}`}
+			aria-label='go to home'
+			 
 			name='go to home'
 			>
 				<Logo width={70} height={70} />

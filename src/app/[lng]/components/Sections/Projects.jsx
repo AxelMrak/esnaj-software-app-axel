@@ -40,6 +40,8 @@ function Projects({ lng }) {
 			<div className="w-full h-full flex flex-row items-center justify-between">
 				<button
 					name='view-all-projects'
+					id="view-all-projects"
+					aria-label='View all projects'
 					onClick={handleViewAll}
 					className="text-2xl font-light border border-gray-light p-2 rounded-sm shadow-sm"
 				>
@@ -50,6 +52,8 @@ function Projects({ lng }) {
 				{!viewAll && (
 					<div className="flex flex-row items-center gap-4">
 						<button
+							aria-label='Previous slide'
+							id="previous-slide"
 							name='previous-slide'
 							onClick={() => swiperRef.current.slidePrev()}
 							className="text-2xl font-light border border-gray-dark rounded-full p-2 transition-transform hover:fill-gray-light  disabled:opacity-20"
@@ -58,6 +62,8 @@ function Projects({ lng }) {
 							<ArrowIcon className="fill-gray-dark w-8 h-8" />
 						</button>
 						<button
+							aria-label='Next slide'
+							id="next-slide"
 							name='next-slide'
 							onClick={() => swiperRef.current.slideNext()}
 							className="text-2xl font-light border border-gray-dark rounded-full p-2 transition-transform hover:fill-gray-light  disabled:opacity-20"

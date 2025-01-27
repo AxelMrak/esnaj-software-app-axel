@@ -38,11 +38,13 @@ export default function RootLayout({ children, params: { lng } }) {
 				<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 				<link rel="icon" type="image/png" href="/favicon.png" />
 			</head>
-			<body>
+			<body className="max-w-[2200px] mx-auto">
 				<BreakpointsProvider>
 					<Header lng={lng} />
-					<Suspense fallback={<Loader lng={lng} />}>{children}</Suspense>
-					<LanguageSwitcher lng={lng || "en"} />
+					<main className="min-h-screen ">
+						<Suspense fallback={<Loader lng={lng} />}>{children}</Suspense>
+					</main>
+					<LanguageSwitcher lng={lng || 'en'} />
 					<Footer lng={lng} />
 				</BreakpointsProvider>
 			</body>

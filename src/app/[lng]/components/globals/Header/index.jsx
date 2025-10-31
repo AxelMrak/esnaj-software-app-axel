@@ -8,6 +8,7 @@ import { routes } from '@/utils/routes';
 import MobileNav from './MobileNav';
 import MenuToggle from './MenuToggle.';
 import { useRouter } from 'next/navigation';
+import { buildLocalizedPath } from '@/utils/paths';
 
 function Header({ lng }) {
 	const { t } = useTranslation(lng);
@@ -19,7 +20,7 @@ function Header({ lng }) {
 
 	return (
 		<header className="max-w-full sticky top-0 left-0 flex flex-row items-center justify-between p-6 bg-white z-50">
-			<Link href={`/${lng}`}
+			<Link href={buildLocalizedPath('/', lng)}
 			aria-label='go to home'
 			 
 			name='go to home'
@@ -36,7 +37,7 @@ function Header({ lng }) {
 			/>
 			<div className="flex flex-row items-center gap-4">
 				<Link
-					href={`/${lng}/${routes[routes.length - 1].name}`}
+					href={buildLocalizedPath(routes[routes.length - 1].link, lng)}
 					className="border border-gray-300 bg-white shadow-sm rounded-sm p-2 text-2xl font-[300] transition-all hover:bg-gray-dark hover:text-white hover:border-transparent"
 				>
 					{t(`routes.${routes[routes.length - 1].name}`)}

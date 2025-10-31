@@ -1,6 +1,7 @@
 'use client'
 import React from 'react';
 import Link from 'next/link';
+import { buildLocalizedPath } from '@/utils/paths';
 
 function MobileNav({ isOpen, close, routes, lng, t }) {
 
@@ -20,7 +21,7 @@ function MobileNav({ isOpen, close, routes, lng, t }) {
 				<Link
 					onClick={handleClickLink}
 					key={index}
-					href={`/${lng}/${route.link}`}
+					href={buildLocalizedPath(route.link, lng)}
 					
 					className="hover:text-accent transition-opacity duration-300 ease-in-out"
 				>

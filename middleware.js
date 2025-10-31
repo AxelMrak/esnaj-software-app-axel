@@ -11,24 +11,25 @@ export const config = {
 };
 
 export function middleware(req) {
+	const sanitizedPathname = req.nextUrl.pathname.replace(/\/{2,}/g, '/');
+	if (sanitizedPathname !== req.nextUrl.pathname) {
+		return NextResponse.redirect(new URL(sanitizedPathname, req.url));
+	}
+
 	if (
 		req.nextUrl.pathname.indexOf('icon') > -1 ||
 		req.nextUrl.pathname.indexOf('chrome') > -1
 	)
 		return NextResponse.next();
-	let lng;
-	if (req.cookies.has(cookieName))
-		lng = acceptLanguage.get(req.cookies.get(cookieName).value);
-	if (!lng) lng = acceptLanguage.get(req.headers.get('Accept-Language'));
-	if (!lng) lng = fallbackLng;
+	const pathname = req.nextUrl.pathname;
+	const hasLocalePrefix = languages.some((loc) =>
+		pathname === `/${loc}` || pathname.startsWith(`/${loc}/`)
+	);
+	const isInternalAsset = pathname.startsWith('/_next');
 
-	if (
-		!languages.some((loc) => req.nextUrl.pathname.startsWith(`/${loc}`)) &&
-		!req.nextUrl.pathname.startsWith('/_next') || req.nextUrl.pathname === '/'
-	) {
-		return NextResponse.redirect(
-			new URL(`/${lng}${req.nextUrl.pathname}`, req.url)
-		);
+	if (!hasLocalePrefix && !isInternalAsset) {
+		const suffix = pathname === '/' ? '' : pathname;
+		return NextResponse.redirect(new URL(`/${fallbackLng}${suffix}`, req.url));
 	}
 
 	if (req.headers.has('referer')) {

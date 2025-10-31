@@ -1,9 +1,9 @@
 import React, { Suspense } from 'react';
 import TitleSection from '../globals/Sections/TitleSection';
 import { useTranslation } from '@/app/i18n';
-import { mainServices, otherServices } from '@/utils/constants';
 import Link from 'next/link';
 import { renderIconService } from '@/utils/render';
+import { buildLocalizedPath } from '@/utils/paths';
 
 
 async function Services({ lng }) {
@@ -20,7 +20,7 @@ async function Services({ lng }) {
 					{t('home.services.main-services') &&
 						t('home.services.main-services').map((service) => (
 							<article
-								key={service.id}
+								key={service.slug}
 								className="w-full md:h-[300px] shadow-sm border border-gray-dark rounded-sm flex flex-col items-start justify-between p-6 py-8 gap-4 relative"
 							>
 								<div className="w-full h-max">
@@ -37,7 +37,7 @@ async function Services({ lng }) {
 									</p>
 									<Link
 										className="text-xl font-light underline decoration-accent"
-										href={`/${lng}/services/${service.slug}`}
+										href={buildLocalizedPath(`/services/${service.slug}`, lng)}
 									>
 										{t('home.projects.know-more')}
 									</Link>

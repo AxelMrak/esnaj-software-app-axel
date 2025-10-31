@@ -1,26 +1,16 @@
-import Link from 'next/link';
-import { languages, fallbackLng } from '../i18n/settings';
-import { useTranslation } from '../i18n';
-import LanguageSwitcher from './components/globals/LanguageSwitcher';
 import HeroHome from './components/Sections/HeroHome';
 import Companies from './components/Sections/Companies';
 import Services from './components/Sections/Services';
 import Projects from './components/Sections/Projects';
 import Contact from './components/Sections/Contact';
-import { METADATA } from '@/utils/constants';
+import { buildPageMetadata } from '@/utils/seo';
 
 export async function generateMetadata({ params: { lng } }) {
-	if (languages.indexOf(lng) < 0) lng = fallbackLng;
-	return {
-		title: METADATA[`home_${lng}`].title,
-		description: METADATA[`home_${lng}`].description,
-		keywords: METADATA[`home_${lng}`].keywords
-	};
+	return buildPageMetadata({ key: 'home', lng });
 }
 
-export default async function Page({ params: { lng } }) {
-	const { t } = await useTranslation(lng);
 
+export default function Page({ params: { lng } }) {
 	return (
 		<main className="w-full 2xl:mx-auto">
 			<HeroHome lng={lng} />

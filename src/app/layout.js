@@ -1,14 +1,17 @@
-import React from 'react'
+import React from 'react';
+import { metadataBase } from '@/utils/seo';
 
-function RootLayout({ children}) {
-  return (
+export const metadata = {
+	metadataBase,
+};
+
+function RootLayout({ children }) {
+	return (
 		<html>
 			<head />
-			<body>
-				{children}
-			</body>
+			<body>{children}</body>
 		</html>
 	);
 }
 
-export default RootLayout
+export default RootLayout;

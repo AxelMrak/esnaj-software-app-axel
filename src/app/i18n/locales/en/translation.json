@@ -11,6 +11,7 @@
 		"about": "About",
 		"projects": "Projects",
 		"services": "Services",
+		"apps": "Apps",
 		"contact": "Contact us"
 	},
 	"home": {
@@ -80,6 +81,12 @@
 					"description": "We design easy-to-follow and beautiful user flows so that your customers have the best user experience."
 				}
 			]
+		},
+		"apps": {
+			"title": "Purpose-built logistics apps",
+			"description": "Two AI products that deliver customs-ready data and cleaner OCR pipelines for logistics teams.",
+			"primaryAction": "Visit product site",
+			"secondaryAction": "See details"
 		},
 		"projects": {
 			"title": "Our projects",
@@ -224,6 +231,17 @@
 		]
 
 	},
+	"appsPage": {
+		"title": "Logistics automation apps",
+		"intro": "Discover how our AI products power document-heavy logistics and customs workflows.",
+		"primaryAction": "Visit product site",
+		"secondaryAction": "Talk to us",
+		"labels": {
+			"overview": "Overview",
+			"features": "Key features",
+			"idealFor": "Ideal for"
+		}
+	},
 	"other": {
 		"404": {
 			"title": "404",
@@ -231,4 +249,3 @@
 		}
 	}
 }
-

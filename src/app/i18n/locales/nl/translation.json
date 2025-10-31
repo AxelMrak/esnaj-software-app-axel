@@ -11,6 +11,7 @@
 		"about": "Over ons",
 		"projects": "Projecten",
 		"services": "Diensten",
+		"apps": "Apps",
 		"contact": "Contact ons"
 	},
 	"home": {
@@ -81,6 +82,12 @@
 					"description": "Wij ontwerpen gebruiksvriendelijke en mooie gebruikersstromen zodat uw klanten de beste gebruikerservaring hebben."
 				}
 			]
+		},
+		"apps": {
+			"title": "Speciaal gebouwde logistieke apps",
+			"description": "Twee AI-producten die douaneklare data en soepelere OCR-processen leveren voor logistieke teams.",
+			"primaryAction": "Bezoek productsite",
+			"secondaryAction": "Bekijk details"
 		},
 		"projects": {
 			"title": "Onze projecten",
@@ -224,6 +231,17 @@
 			}
 		]
 
+	},
+	"appsPage": {
+		"title": "Logistieke automatiseringsapps",
+		"intro": "Ontdek hoe onze AI-producten documentintensieve logistieke en douaneprocessen versnellen.",
+		"primaryAction": "Bezoek productsite",
+		"secondaryAction": "Neem contact op",
+		"labels": {
+			"overview": "Overzicht",
+			"features": "Belangrijkste kenmerken",
+			"idealFor": "Ideaal voor"
+		}
 	},
 	"other": {
 		"404": {

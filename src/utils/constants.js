@@ -66,4 +66,14 @@ export const METADATA = {
 		"description": "Neem contact op met Esnaj Software, uw vertrouwde webontwikkelingspartner in Delft. We horen graag van u.",
 		"keywords": "contact, contact Esnaj Software, contact Esnaj Software Delft, contact webontwikkelingspartner, contact webontwikkelingspartner Delft",
 	},
+	"apps_en": {
+		"title": "Logistics Automation Apps | Esnaj Software",
+		"description": "Explore Balasci and Straighten.AI, AI-driven products that accelerate logistics and customs document processing.",
+		"keywords": "EUCDM-ready AI OCR, ASYCUDA XML export, AI customs document automation, 95% accuracy logistics OCR, invoice OCR for logistics, Bill of Lading OCR, logistics document automation, OpenAI Google Document AI logistics, freight document processing automation, customs compliance automation, multi-country customs integration, AI document straightener, OCR preprocessing tool, logistics document deskewing, improve OCR accuracy",
+	},
+	"apps_nl": {
+		"title": "Logistieke automatiseringsapps | Esnaj Software",
+		"description": "Ontdek Balasci en Straighten.AI, onze AI-producten die douane- en logistieke documentverwerking versnellen.",
+		"keywords": "EUCDM-ready AI OCR, ASYCUDA XML export, AI customs document automation, 95% accuracy logistics OCR, invoice OCR for logistics, Bill of Lading OCR, logistics document automation, OpenAI Google Document AI logistics, freight document processing automation, customs compliance automation, multi-country customs integration, AI document straightener, OCR preprocessing tool, logistics document deskewing, improve OCR accuracy",
+	},
 }

@@ -11,6 +11,10 @@ export const routes = [
 		name: 'services',
 		link: '/services',
 	},
+	{
+		name: 'apps',
+		link: '/apps',
+	},
     {
         name: 'projects',
         link: '/projects',

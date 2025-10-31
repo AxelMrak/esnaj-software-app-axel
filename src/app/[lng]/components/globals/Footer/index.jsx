@@ -23,12 +23,14 @@ function Footer({ lng }) {
 				</div>
 			</div>
 			<div className="w-1/3 flex flex-col items-start gap-4 p-4">
-				<Link
-					href="https://www.linkedin.com/company/esnaj-software/"
-					className=" text-gray-dark hover:text-gray-light transition-all"
-				>
-					<LinkedInIcon className="w-12 h-12 fill-current" />
-				</Link>
+			<Link
+				href="https://www.linkedin.com/company/esnaj-software/"
+				className="text-gray-dark hover:text-gray-light transition-all"
+				aria-label="Visit Esnaj Software on LinkedIn"
+			>
+				<LinkedInIcon className="w-12 h-12 fill-current" />
+				<span className="sr-only">LinkedIn</span>
+			</Link>
 				<Link
 					href="mailto:info@esnajsoftware.com"
 					className="text-2xl font-normal text-gray-dark underline hover:text-gray-light transition-all"
